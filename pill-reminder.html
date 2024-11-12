@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sampark Hamesha - Personal Information</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#e85b72" /> 
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style-font.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="ICON" href="images/fevicon/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut ICON" href="/images/fevicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/fevicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/fevicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/fevicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/fevicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/fevicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/fevicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/fevicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/fevicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/fevicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/fevicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/fevicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/fevicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/fevicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#e85b72" /> 
+  <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Mada" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+
+  <script>
+    function openNav() {
+    document.getElementById("mySidenav").style.right = "0%";
+     document.getElementById("faded-bg").style.display = "block";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.right = "-50%";
+        document.getElementById("faded-bg").style.display = "none";
+    }
+    $( document ).ready(function() {
+       $(".profile-drop").click(function(){
+          $("#myDropdown").toggle();
+       });
+    });
+  </script>
+  
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <div class="custom-container">
+        <span id="faded-bg" style="display: none;" onclick="closeNav()"></span>
+        <div class="menu">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Sampark Hamesha Logo"></a>
+          </div>
+          
+          
+          <button id="toggle-menu" class="toggle-btn" onclick="openNav()">
+              <img src="images/menu.png" class="menu-open">
+          </button>
+           <div class="profile-more">
+            <a  class="avtar profile-drop"><img src="images/profile-img.png" alt="Profile Image"></a>
+            <a href="#" class="more" style="display: none;"><img src="images/plus.svg" alt="plus icon"></a>
+          </div>     
+            <div id="myDropdown" class="dropdown-content">
+              <a href="my-profile.html">My profile</a>
+              <a href="#">Logout</a>
+            </div>
+
+             <ul id="mySidenav"  class="menu-bar">
+                         <span id="#faded-bg" onclick="closeNav()"></span>
+                <!--  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                <!-- <img src="images/menu-cross.png" class="menu-close"> -->
+                
+                <li class="welcome-li">
+                  <div class="welcome-login">
+                  <a href="#"><span>Welcome, Sonika</span></a>
+                </div>
+                </li>
+                
+                 <li><img class="category-icon" src="images/category-icon/prescription.svg"><a href="prescription.html">Prescriptions</a></li>
+                <li><img class="category-icon" src="images/body-scan.svg"><a href="body-scans.html">Body Scans</a></li>
+                <li><img class="category-icon" src="images/category-icon/leb-report.svg"><a href="lab-reports.html">Lab Reports</a></li>
+                <li><img class="category-icon" src="images/category-icon/activity-traker.svg"><a href="activity-tracker.html">Activity Tracker</a></li>
+                <li><img class="category-icon" src="images/category-icon/Diseases-Care.svg"><a href="health-care.html">Health Care</a></li>
+                <li><img class="category-icon" src="images/category-icon/reminders.svg"><a href="pill-reminder.html">Reminders</a></li>
+                 <li class="log-out-li"><img class="category-icon" src="images/category-icon/logout.svg"><a href="#">Log out</a></li>
+                <li class="profile profile-drop"><a><img src="images/profile-img.png" alt="Profile Image"></a></li>
+                <li class="plus" style="display: none;"><a href="#"><img src="images/plus.svg" alt="plus icon"></a></li>
+             </ul>
+     
+          
+        </div>
+        
+      </div>
+    </header>
+    <div class="custom-container">
+      <div class="main-wrapper">
+        <div class="upload-heading">
+               <div class="sub-heading">
+              <h2>Dont ever miss you dose</h2>
+            </div>
+            <div class="main-heading">
+              <h1>Pill Reminders</h1>
+            </div>
+        </div>
+        
+         <div class="filter">
+          <select required>
+            <option value='' disabled selected>Last month..
+            <option>january
+            <option>february
+            <option>march
+          </select>
+
+          <button class="add-activity-btn"  onclick="window.location.href='reminder.html';" style="margin-left: 10px;">
+            <img src="images/plus.svg">
+            Add Activity
+          </button>
+         </div>
+
+        
+
+          
+           <div class="activity-tracker-heading">
+                <h2 class="title left">Today</h2>
+           </div>
+           <div class="activity-content">
+               <div class="activity-box disease-box miss no-margin-left">
+                   <div class="disease-text">
+                       <div class="text">
+                        <label class="miss">BEFORE MEAL</label>
+                         <h1>Clemastine</h1>
+                         
+                         <span>Aceclofenac</span>
+                         <span>1/3 Tablet</span>
+                       </div>
+                   </div>
+                   <div class="disease-time miss">
+                         <div class="checkbox">
+                          <input type="checkbox" id="q" />
+                          <label for="q"></label>
+                         </div>
+                   	     <span>You missed your medicine want to Reschedule </span>
+                   </div>
+               </div>
+               <div class="activity-box disease-box miss complete no-margin-left">
+                   <div class="disease-text">
+                       <div class="text">
+                        <label class="miss ">BEFORE MEAL</label>
+                         <h1>Clemastine</h1>
+                         
+                         <span>Aceclofenac</span>
+                         <span>1/3 Tablet</span>
+                       </div>
+                   </div>
+                   <div class="disease-time miss take">
+                         <div class="checkbox">
+                          <input type="checkbox" id="p" />
+                          <label for="p"></label>
+                         </div>
+                         <span>Wow ! You can complete your course.</span>
+                   </div>
+               </div>
+               <div class="activity-box disease-box miss taken no-margin-left">
+                   <div class="disease-text">
+                       <div class="text">
+                        <label class="miss">BEFORE MEAL</label>
+                         <h1>Clemastine</h1>
+                         
+                         <span>Aceclofenac</span>
+                         <span>1/3 Tablet</span>
+                       </div>
+                   </div>
+                   <div class="disease-time miss done">
+                        <div class="checkbox">
+                          <input type="checkbox" id="a" />
+                          <label for="a"></label>
+                         </div>
+                         <span>Your Medicine is Scheduled on above time.</span>
+                   </div>
+                   <!-- <div class="hover-div">
+
+                       <span>Mark as Pill Taken</span>
+                   </div> -->
+               </div>
+           </div>
+
+
+           <div class="activity-tracker-heading">
+                <h2 class="title left">22 jun</h2>
+           </div>
+           <div class="activity-content">
+               <div class="activity-box disease-box miss complete no-margin-left">
+                   <div class="disease-text">
+                       <div class="text">
+                        <label class="miss ">BEFORE MEAL</label>
+                         <h1>Clemastine</h1>
+                         
+                         <span>Aceclofenac</span>
+                         <span>1/3 Tablet</span>
+                       </div>
+                   </div>
+                   <div class="disease-time miss ">
+                         <span>Wow ! You can complete your course.</span>
+                   </div>
+               </div> 
+           </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

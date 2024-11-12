@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="50" cy="50" r="50"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Disease-care" transform="translate(-981.000000, -1075.000000)">
+            <g id="Group" transform="translate(940.000000, 1046.000000)">
+                <g id="Page-1" transform="translate(41.000000, 29.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#F2F2EF" xlink:href="#path-1"></use>
+                    <g id="70" mask="url(#mask-2)">
+                        <g transform="translate(-15.000000, 24.000000)">
+                            <path d="M92.4661417,3.70823529 C87.7417323,-0.997647059 80.088189,-0.997647059 75.3826772,3.70823529 L22.0535433,56.8282353 C18.7275591,60.1411765 17.7637795,64.9035294 19.1244094,69.0823529 L1.60629921,86.5317647 C-0.529133858,88.6588235 -0.529133858,92.1035294 1.60629921,94.2305882 C3.74173228,96.3576471 7.2,96.3576471 9.33543307,94.2305882 L26.8535433,76.7811765 C31.0488189,78.1364706 35.8299213,77.1764706 39.1559055,73.8635294 L92.4661417,20.7623529 C97.1716535,16.0376471 97.1716535,8.41411765 92.4661417,3.70823529 Z" id="Shape" fill="#FBD984" fill-rule="nonzero"></path>
+                            <path d="M85.7385827,10.4094118 C84.8125984,9.48705882 83.319685,9.48705882 82.3937008,10.4094118 L13.7385827,78.7952941 L17.0834646,82.1270588 L85.7385827,13.7411765 C86.6645669,12.8188235 86.6645669,11.3317647 85.7385827,10.4094118 Z" id="Shape" fill="#444444" fill-rule="nonzero"></path>
+                            <polygon id="Shape" fill="#F1786B" fill-rule="nonzero" points="13.7382047 78.7960471 56.1371339 36.5616941 59.4778583 39.8893176 17.0791181 82.1234824"></polygon>
+                            <ellipse id="Oval" fill="#F1786B" fill-rule="nonzero" cx="56.8251969" cy="39.2094118" rx="4.47874016" ry="4.46117647"></ellipse>
+                            <polygon id="Shape" fill="#F6BD70" fill-rule="nonzero" points="74.1668031 4.92141176 79.0174488 9.75303529 77.3204409 11.4433882 72.4697953 6.61176471"></polygon>
+                            <polygon id="Shape" fill="#F6BD70" fill-rule="nonzero" points="66.9550866 12.0832 71.8055433 16.9150118 70.1085354 18.6053647 65.2578898 13.7735529"></polygon>
+                            <polygon id="Shape" fill="#F6BD70" fill-rule="nonzero" points="59.7565984 19.2587294 64.6072441 24.0903529 62.9102362 25.7807059 58.0595906 20.9490824"></polygon>
+                            <polygon id="Shape" fill="#F6BD70" fill-rule="nonzero" points="52.5581102 26.4338824 57.4087559 31.2658824 55.711748 32.9562353 50.8611024 28.1244235"></polygon>
+                            <polygon id="Shape" fill="#F6BD70" fill-rule="nonzero" points="45.36 33.6094118 50.2104567 38.4412235 48.5134488 40.1315765 43.6628031 35.2997647"></polygon>
+                            <polygon id="Shape" fill="#F6BD70" fill-rule="nonzero" points="38.1480945 40.7981176 42.9987402 45.6299294 41.3017323 47.3202824 36.4510866 42.4884706"></polygon>
+                            <polygon id="Shape" fill="#F6BD70" fill-rule="nonzero" points="30.936378 47.9602824 35.7870236 52.7919059 34.0900157 54.4822588 29.2393701 49.6506353"></polygon>
+                            <polygon id="Shape" fill="#F6BD70" fill-rule="nonzero" points="23.7378898 55.1354353 28.5885354 59.9670588 26.8915276 61.6574118 22.0408819 56.8257882"></polygon>
+                            <g id="Group" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(34.204724, 16.941176)">
+                                <polygon id="Shape" fill="#F6BD70" fill-rule="nonzero" points="52.2039685 0.152470588 57.0544252 4.98428235 55.3574173 6.67463529 50.5067717 1.84301176"></polygon>
+                                <polygon id="Shape" fill="#F6BD70" fill-rule="nonzero" points="44.992252 7.34117647 49.8428976 12.1728 48.1458898 13.8631529 43.2952441 9.03152941"></polygon>
+                                <polygon id="Shape" fill="#F6BD70" fill-rule="nonzero" points="37.7937638 14.5167059 42.6444094 19.3483294 40.9474016 21.0386824 36.0967559 16.2070588"></polygon>
+                                <polygon id="Shape" fill="#F6BD70" fill-rule="nonzero" points="30.5954646 21.6918588 35.4461102 26.5236706 33.7491024 28.2140235 28.8984567 23.3824"></polygon>
+                                <polygon id="Shape" fill="#F6BD70" fill-rule="nonzero" points="23.3971654 28.8673882 28.247622 33.6990118 26.5506142 35.3893647 21.6999685 30.5577412"></polygon>
+                                <polygon id="Shape" fill="#F6BD70" fill-rule="nonzero" points="16.1854488 36.0293647 21.0359055 40.8611765 19.3388976 42.5515294 14.488252 37.7197176"></polygon>
+                                <polygon id="Shape" fill="#F6BD70" fill-rule="nonzero" points="8.97354331 43.2180706 13.824 48.0496941 12.1269921 49.7400471 7.27634646 44.9084235"></polygon>
+                                <polygon id="Shape" fill="#F6BD70" fill-rule="nonzero" points="1.77505512 50.3932235 6.62551181 55.2250353 4.92850394 56.9153882 0.0780472441 52.0835765"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

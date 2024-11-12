@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sampark Hamesha - Personal Information</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#e85b72" />
+  <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/jquery.range.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="ICON" href="images/fevicon/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut ICON" href="images/fevicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/fevicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/fevicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/fevicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/fevicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/fevicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/fevicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/fevicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/fevicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/fevicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/fevicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/fevicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/fevicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/fevicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800,900" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/jquery.range.js"></script>
+  <script type="text/javascript">
+  
+  $(document).ready(function(){
+     /*clock javascript start here*/
+      const secondHand = document.querySelector('.seconds');
+    const minsHand = document.querySelector('.minutes');
+    const hourHand = document.querySelector('.hours');
+
+		const setDate = function() {
+		const now = new Date();
+
+		const seconds = now.getSeconds();
+		const secondsDegrees = ((seconds / 60) * 360) + 90;
+		secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+
+		const mins = now.getMinutes();
+		const minsDegrees = ((mins / 60) * 360) + ((seconds/60)*6);
+		minsHand.style.transform = `rotate(${minsDegrees}deg)`;
+
+		const hour = now.getHours();
+		const hourDegrees = ((hour / 12) * 360) + ((mins/60)*30);
+		hourHand.style.transform = `rotate(${hourDegrees}deg)`;
+		}
+
+		setInterval(setDate, 1000);
+
+		setDate();
+     /*clock javascript end here*/
+  	var slider = document.getElementById('slider');
+        var ranger = document.getElementById('ranger');
+         var ww = $(window).width();
+      console.log(ww);
+        /*male character start here for zoom*/
+        var img = document.getElementById('zoom');
+        var img1 = document.getElementById('zoom1');
+        var img2 = document.getElementById('zoom2');
+        var img3 = document.getElementById('zoom3');
+        var img4 = document.getElementById('zoom4');
+        /*male character end here for zoom*/
+        /*fmale character start here for zoom*/
+        var fimg1 = document.getElementById('fage-1');
+        var fimg2 = document.getElementById('fage-2');
+        var fimg3 = document.getElementById('fage-3');
+        var fimg4 = document.getElementById('fage-4');
+        var fimg5 = document.getElementById('fage-5');
+        /*fmale character end here for zoom*/
+        /*male character start here for zoom*/
+         var width = img1.width;
+         var height = img1.height;
+
+         var width = img2.width;
+         var height = img2.height;
+
+         var width = img3.width;
+         var height = img3.height;
+
+         var width = img4.width;
+         var height = img4.height;
+         /*male character end here for zoom*/
+         /*fmale character start here for zoom*/
+          var width = fimg1.width;
+          var height = fimg1.height;
+
+          var width = fimg2.width;
+          var height = fimg2.height;
+
+          var width = fimg3.width;
+          var height = fimg3.height;
+
+          var width = fimg4.width;
+          var height = fimg4.height;
+
+          var width = fimg5.width;
+          var height = fimg5.height;
+          /*fmale character end here for zoom*/
+        slider.onchange = function(){
+        	       if( slider.value>=35);
+			   	  {
+			   	  	$('.login .personal .login-right .login-img img.male').each(function () {
+			   	  	$(this).attr('src', $(this).attr('src').replace('illustration', '35'));
+			   	  	$(this).attr('src', $(this).attr('src').replace('45', '35'));
+			   	  	$(this).attr('src', $(this).attr('src').replace('65', '35'));
+			   	  	});
+
+			   	  }
+			   	   if(slider.value>=45)
+			   	  {
+			   	  	$('.login .personal .login-right .login-img img.male').each(function () {
+			   	  	$(this).attr('src', $(this).attr('src').replace('35', '45'));
+			   	  	$(this).attr('src', $(this).attr('src').replace('55', '45'));
+			   	  	$(this).attr('src', $(this).attr('src').replace('65', '45'));
+			   	  	});
+
+			   	  }
+			   	   if(slider.value>=55)
+			   	  {
+			   	  	$('.login .personal .login-right .login-img img.male').each(function () {
+			   	  	$(this).attr('src', $(this).attr('src').replace('45', '55'));
+			   	  	$(this).attr('src', $(this).attr('src').replace('35', '55'));
+			   	  	$(this).attr('src', $(this).attr('src').replace('65', '55'));
+			   	  	});
+
+			   	  }
+			   	  if(slider.value>=65)
+			   	  {
+			   	  	$('.login .personal .login-right .login-img img.male').each(function () {
+			   	  	$(this).attr('src', $(this).attr('src').replace('55', '65'));
+			   	  	$(this).attr('src', $(this).attr('src').replace('35', '65'));
+			   	  	$(this).attr('src', $(this).attr('src').replace('45', '65'));
+			   	  	});
+
+			   	  }
+        }
+
+
+        ranger.onchange = function(){
+            if(ww < 2600) {
+           /*male character start here for zoom*/
+            img.width = width * (ranger.value* 0.5);
+            img.height = 1200 + (ranger.value* 10);
+            img1.width = width * (ranger.value* 0.5);
+            img1.height = 1200 + (ranger.value* 10);
+            img2.width = width * (ranger.value* 0.5);
+            img2.height = 1200 + (ranger.value* 10);
+            img3.width = width * (ranger.value* 0.5);
+            img3.height = 1200 + (ranger.value* 10);
+            img4.width = width * (ranger.value* 0.5);
+            img4.height = 1200 + (ranger.value* 10);
+           /*male character end here for zoom*/
+
+            fimg1.width = width * (ranger.value* 0.5);
+            fimg1.height = 1200 + (ranger.value* 10);
+            fimg2.width = width * (ranger.value* 0.5);
+            fimg2.height = 1200 + (ranger.value* 10);
+            fimg3.width = width * (ranger.value* 0.5);
+            fimg3.height = 1200 + (ranger.value* 10);
+            fimg4.width = width * (ranger.value* 0.5);
+            fimg4.height = 1200 + (ranger.value* 10);
+            fimg5.width = width * (ranger.value* 0.5);
+            fimg5.height = 1200 + (ranger.value* 10);
+           }
+           if(ww < 2000) {
+            /*male character start here for zoom*/
+            img.width = width * (ranger.value* 0.5);
+            img.height = 750 + (ranger.value* 10);
+            img1.width = width * (ranger.value* 0.5);
+            img1.height = 750 + (ranger.value* 10);
+            img2.width = width * (ranger.value* 0.5);
+            img2.height = 750 + (ranger.value* 10);
+            img3.width = width * (ranger.value* 0.5);
+            img3.height = 750 + (ranger.value* 10);
+            img4.width = width * (ranger.value* 0.5);
+            img4.height = 750 + (ranger.value* 10);
+           /*male character end here for zoom*/
+
+            fimg1.width = width * (ranger.value* 0.5);
+            fimg1.height = 750 + (ranger.value* 10);
+            fimg2.width = width * (ranger.value* 0.5);
+            fimg2.height = 750 + (ranger.value* 10);
+            fimg3.width = width * (ranger.value* 0.5);
+            fimg3.height = 750 + (ranger.value* 10);
+            fimg4.width = width * (ranger.value* 0.5);
+            fimg4.height = 750 + (ranger.value* 10);
+            fimg5.width = width * (ranger.value* 0.5);
+            fimg5.height = 750 + (ranger.value* 10);
+           }
+           
+            if(ww < 1500) {
+           /*male character start here for zoom*/
+            img.width = width * (ranger.value* 0.5);
+            img.height = 600 + (ranger.value* 10);
+            img1.width = width * (ranger.value* 0.5);
+            img1.height = 600 + (ranger.value* 10);
+            img2.width = width * (ranger.value* 0.5);
+            img2.height = 600 + (ranger.value* 10);
+            img3.width = width * (ranger.value* 0.5);
+            img3.height = 600 + (ranger.value* 10);
+            img4.width = width * (ranger.value* 0.5);
+            img4.height = 600 + (ranger.value* 10);
+           /*male character end here for zoom*/
+
+            fimg1.width = width * (ranger.value* 0.5);
+            fimg1.height = 600 + (ranger.value* 10);
+            fimg2.width = width * (ranger.value* 0.5);
+            fimg2.height = 600 + (ranger.value* 10);
+            fimg3.width = width * (ranger.value* 0.5);
+            fimg3.height = 600 + (ranger.value* 10);
+            fimg4.width = width * (ranger.value* 0.5);
+            fimg4.height = 600 + (ranger.value* 10);
+            fimg5.width = width * (ranger.value* 0.5);
+            fimg5.height = 600 + (ranger.value* 10);
+           }
+           
+            if(ww < 1200) {
+            	/*male character start here for zoom*/
+            img.width = width * (ranger.value* 0.5);
+            img.height = 450 + (ranger.value* 5);
+            img1.width = width * (ranger.value* 0.5);
+            img1.height = 450 + (ranger.value* 5);
+            img2.width = width * (ranger.value* 0.5);
+            img2.height = 450 + (ranger.value* 5);
+            img3.width = width * (ranger.value* 0.3);
+            img3.height = 450 + (ranger.value* 5);
+            img4.width = width * (ranger.value* 0.5);
+            img4.height = 450 + (ranger.value* 5);
+           /*male character end here for zoom*/
+
+            fimg1.width = width * (ranger.value* 0.5);
+            fimg1.height = 450 + (ranger.value* 10);
+            fimg2.width = width * (ranger.value* 0.5);
+            fimg2.height = 450 + (ranger.value* 10);
+            fimg3.width = width * (ranger.value* 0.5);
+            fimg3.height = 450 + (ranger.value* 10);
+            fimg4.width = width * (ranger.value* 0.5);
+            fimg4.height = 450 + (ranger.value* 10);
+            fimg5.width = width * (ranger.value* 0.5);
+            fimg5.height = 450 + (ranger.value* 10);
+
+            }
+            if(ww < 900) {
+              /*male character start here for zoom*/
+            img.width = width * (ranger.value* 0.5);
+            img.height = 340 + (ranger.value* 5);
+            img1.width = width * (ranger.value* 0.5);
+            img1.height = 340 + (ranger.value* 5);
+            img2.width = width * (ranger.value* 0.5);
+            img2.height = 340 + (ranger.value* 5);
+            img3.width = width * (ranger.value* 0.3);
+            img3.height = 340 + (ranger.value* 5);
+            img4.width = width * (ranger.value* 0.5);
+            img4.height = 340 + (ranger.value* 5);
+           /*male character end here for zoom*/
+
+            fimg1.width = width * (ranger.value* 0.5);
+            fimg1.height = 340 + (ranger.value* 10);
+            fimg2.width = width * (ranger.value* 0.5);
+            fimg2.height = 340 + (ranger.value* 10);
+            fimg3.width = width * (ranger.value* 0.5);
+            fimg3.height = 340 + (ranger.value* 10);
+            fimg4.width = width * (ranger.value* 0.5);
+            fimg4.height = 340 + (ranger.value* 10);
+            fimg5.width = width * (ranger.value* 0.5);
+            fimg5.height = 340 + (ranger.value* 10);
+
+            }
+           
+          
+        }
+         $('#male').click(function(){
+                  
+              $("#img1").css({"display": "block", "width": "80%","right": "7%"});
+              $("#img2").css('display','none');
+              $("#age1").click(function(){
+
+                 $(".age-1").css({"display": "block", "width": "80%","right": "7%"});
+                 $(".age-2,.age-3,.age-4,.age-5,#img1,#img2,.fage-1,.fage-2,.fage-3,.fage-4,.fage-5").css('display','none');
+               });
+               $("#age2").click(function(){
+
+                 $(".age-2").css({"display": "block", "width": "80%","right": "7%"});
+                 $(".age-1,.age-3,.age-4,.age-5,#img1,#img2,.fage-1,.fage-2,.fage-3,.fage-4,.fage-5").css('display','none');
+               });
+                $("#age3").click(function(){
+
+                 $(".age-3").css({"display": "block", "width": "80%","right": "7%"});
+                 $(".age-2,.age-1,.age-4,.age-5,#img1,#img2,.fage-1,.fage-2,.fage-3,.fage-4,.fage-5").css('display','none');
+               });
+                 $("#age4").click(function(){
+
+                 $(".age-4").css({"display": "block", "width": "80%","right": "7%"});
+                  $(".age-5,.age-3,.age-2,.age-1,#img1,#img2,.fage-1,.fage-2,.fage-3,.fage-4,.fage-5").css('display','none');
+               });
+                $("#age5").click(function(){
+
+                 $(".age-5").css({"display": "block", "width": "80%","right": "7%"});
+                  $(".age-4,.age-3,.age-2,.age-1,#img1,#img2,.fage-1,.fage-2,.fage-3,.fage-4,.fage-5").css('display','none');
+               });
+
+         });
+         $('#female').click(function(){
+
+              $("#img2").css({"display": "block", "width": "80%","right": "7%"});
+              $("#img1").css('display','none');
+              $("#age1").click(function(){
+                 $(".fage-1").css({"display": "block", "width": "80%","right": "7%"});
+                 $(".fage-3,.fage-4,.fage-5,.fage-2,.age-1,.age-2,.age-3,.age-4,.age-5,#img1,#img2").css('display','none');
+                });
+              $("#age2").click(function(){
+                 $(".fage-2").css({"display": "block", "width": "80%","right": "7%"});
+                 $(".fage-5,.fage-4,.fage-3,.fage-1,.age-1,.age-2,.age-3,.age-4,.age-5,#img1,#img2").css('display','none');
+               });
+              $("#age3").click(function(){
+                 $(".fage-3").css({"display": "block", "width": "80%","right": "7%"});
+                 $(".fage-5,.fage-4,.fage-2,.fage-1,.age-1,.age-2,.age-3,.age-4,.age-5,#img1,#img2").css('display','none');
+               });
+              $("#age4").click(function(){
+                $(".fage-4").css({"display": "block", "width": "80%","right": "7%"});
+                 $(".fage-5,.fage-3,.fage-2,.fage-1,.age-1,.age-2,.age-3,.age-4,.age-5,#img1,#img2").css('display','none');
+               });
+              $("#age5").click(function(){
+                $(".fage-5").css({"display": "block", "width": "80%","right": "7%"});
+                $(".fage-4,.fage-3,.fage-2,.fage-1,.age-1,.age-2,.age-3,.age-4,.age-5,#img1,#img2").css('display','none');
+               });
+
+         });
+          $("#drink").css({"display":"block" , "opacity": "0","right": "6%"});
+          $("#smok").css({"display":"block" , "opacity": "0","right": "6%"});
+          $("#singal").css({"display": "block", "width": "85%","right": "6%", "opacity": "0"});
+          $("#two").css({"display": "block", "width": "85%","right": "6%", "opacity": "0"});
+         $('#broccoli').click(function(){
+             $(".vage").css({"display": "block", "width": "85%","right": "6%", "opacity": "1"});
+              $(".table").css({"display": "block", "width": "85%","right": "6%"});
+             $(".non-vage").css({"display":"block" , "opacity": "0","right": "6%"});
+             $(".smoke-container").css({"display":"block" , "opacity": "0",});
+             
+             
+         });
+         $('#prosciutto').click(function(){
+             $(".non-vage").css({"display": "block", "width": "85%","right": "6%", "opacity": "1"});
+             $(".smoke-container").css({"display": "block", "opacity": "1"});
+               $(".table").css({"display": "block", "width": "85%","right": "6%"});
+             $(".vage").css({"display":"block" , "opacity": "0","right": "6%"});
+         }); 
+         $('#drink-yes').click(function(){
+           $("#drink").css({"display": "block", "width": "85%","right": "6%", "opacity": "1"});
+          
+         });
+          $('#drink-no').click(function(){
+           $("#drink").css({"display": "none", "width": "85%","right": "6%", "opacity": "1"});
+           
+         });
+         $('#yes').click(function(){
+              $("#smok").css({"display": "block", "width": "85%","right": "6%", "opacity": "1"});
+               $(".smoke-container-cigrate").css({"display":"block" , "opacity": "1",}); 
+         });
+         $('#no').click(function(){
+              $("#smok").css({"display": "none", "width": "85%","right": "6%", "opacity": "1"}); 
+              $(".smoke-container-cigrate").css({"display":"block" , "opacity": "0",});
+         });
+         $('#exercise1').click(function(){
+           $("#singal").css({"display": "block", "width": "85%","right": "6%", "opacity": "1"});
+            $("#two").css({"display": "block", "width": "85%","right": "6%", "opacity": "0"});
+         });
+         $('#exercise2').click(function(){
+           $("#two").css({"display": "block", "width": "85%","right": "6%", "opacity": "1"});
+           $("#singal").css({"display": "block", "width": "85%","right": "6%", "opacity": "0"});
+         });
+         $('#exercise3').click(function(){
+           $("#two").css({"display": "block", "width": "85%","right": "6%", "opacity": "0"});
+           $("#singal").css({"display": "block", "width": "85%","right": "6%", "opacity": "0"});
+         });
+
+      });
+  </script>
+</head>
+
+<body>
+	<span id="slider_value"></span>
+  <div class="wrapper">
+    <div class="login">
+      <div class="personal">
+        <div id="style-2" class="login-left personal-info">
+          <div class="login-form">
+            <div class="logo">
+              <a href="index.html"><img src="images/logo.png" alt="Sampark Hamesha Logo"></a>
+            </div>
+            <div class="sub-heading">
+              <h2>Help us with some questions</h2>
+            </div>
+            <div class="main-heading">
+              <h1>Personal Information</h1>
+            </div>
+            <form class="form-horizontal" action="index.html">
+              <div class="form-group">
+                <label>What’s your gender?</label>
+                <input type="radio" name="rad1" id="male">
+                <input type="radio" name="rad1" id="female">
+              </div>
+              <div class="form-group">
+                <label>Which age group describes you?</label>
+                <div class="multiple-input">
+                  <input type="radio" id="age1" name="age"> <label for="age1" class="age"> < 35 </label>
+                  <input type="radio" id="age2" name="age"> <label for="age2" class="age">35-44</label>
+                  <input type="radio" id="age3" name="age"> <label for="age3" class="age">45-54</label>
+                  <input type="radio" id="age4" name="age"> <label for="age4" class="age">55-64</label>
+                  <input type="radio" id="age5" name="age"> <label for="age5" class="age">65 ></label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Your height <span>(inch)</span></label>
+                  <input type="hidden" class="slider-input" value="7.5" id="ranger"/>
+              </div>
+              <div class="form-group">
+                   <label>Your weight <span>(inch)</span></label>
+                  <input type="hidden" class="slider-input-weight" value="38" id="slider" step="1"/>
+                <div class="bmi-score">
+                  <heading>27.4</heading>
+                  <p>Your BMI score <br> <span>Score calculated based on your height and weight</span></p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Your prefered meal choice?</label>
+                <input type="radio" name="meal" id="broccoli">
+                <input type="radio" name="meal" id="prosciutto">
+              </div>
+              <div class="form-group">
+                <label>How often do you exercise?</label>
+                <div class="multiple-input">
+                  <input type="radio" id="exercise1" name="exercise"><label for="exercise1" class="input-120">Vigorous</label>
+                  <input type="radio" id="exercise2" name="exercise"><label for="exercise2" class="input-120">Moderate</label>
+                  <input type="radio" id="exercise3" name="exercise"><label for="exercise3" class="input-120">No Exercise</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Do you smoke currently ?</label>
+                <div class="multiple-input">
+                  <input type="radio" name="smoke" id="yes"><label for="yes" class="input-120"> Yes </label>
+                  <input type="radio" name="smoke" id="no"><label for="no" class="input-120"> No </label>
+                </div>
+              </div>
+               <div class="form-group">
+                        <label>do you consume alcohol ?</label>
+                        <div class="multiple-input">
+                          <input type="radio" name="drink" id="drink-yes"><label for="drink-yes" class="input-120"> Yes </label>
+                          <input type="radio" name="drink" id="drink-no"><label for="drink-no" class="input-120" > No </label>
+                        </div>
+               </div>
+              <div class="button">
+                <button type="submit" class="default-btn submit">Submit</button>
+                <button type="submit" class="default-btn skip">Skip for now</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div  class="login-right">
+        
+          
+          <div class="login-img">
+              <div class="clock-perant">
+         	      <div class="container">
+    
+				        <div class="clockbase"></div>
+				        <div class="clock-face"></div>
+				        <div class="tip"></div>
+				        <div class="center"></div>
+				        <div class="seconds"></div>
+				        <div class="minutes"></div>
+				        <div class="hours"></div>
+				        <div class="dimension"></div>
+		         </div>
+             </div>
+             <img id="img" class="" src="images/illustration/bg_clock.svg" alt="Sampark Hamesha" style="display: block;width: 85%">
+             <img id="img1" class="male" src="images/illustration/men.png" alt="Sampark Hamesha" style="display: block;width: 80%;right: 7%;">
+             <img id="img2" class="male" src="images/illustration/fmale.png" alt="Sampark Hamesha" style="display: none;">
+              <img id="zoom" class="male age-1" src="images/illustration/men.png" alt="Sampark Hamesha" style="display: none;">
+              <img id="zoom1" class="male age-2" src="images/illustration/men1.png" alt="Sampark Hamesha" style="display: none;">
+              <img id="zoom2" class="male age-3" src="images/illustration/men2.png" alt="Sampark Hamesha" style="display: none;">
+              <img id="zoom3" class="male age-4" src="images/illustration/men3.png" alt="Sampark Hamesha" style="display: none;">
+              <img id="zoom4" class="male age-5" src="images/illustration/men4.png" alt="Sampark Hamesha" width="50%"  style="display: none;">
+             <img id="fage-1" class="male fage-1" src="images/illustration/fmale.png" alt="Sampark Hamesha" style="display: none;">
+             <img id="fage-2" class="male fage-2" src="images/illustration/fmale1.png" alt="Sampark Hamesha" style="display: none;">
+             <img id="fage-3" class="male fage-3" src="images/illustration/fmale2.png" alt="Sampark Hamesha" style="display: none;">
+              <img id="fage-4" class="male fage-4" src="images/illustration/fmale3.png" alt="Sampark Hamesha" style="display: none;">
+              <img id="fage-5" class="male fage-5" src="images/illustration/fmale4.png" alt="Sampark Hamesha" style="display: none;">
+              <img id="vag" class=" vage" src="images/illustration/vag.png" alt="Sampark Hamesha" style="display: none;">
+              <img id="non-vage" class=" non-vage" src="images/illustration/non-vag.png" alt="Sampark Hamesha" style="display: none;">
+              <img id="non-vage" class=" table" src="images/illustration/table.png" alt="Sampark Hamesha" style="display: none;">
+              <img id="drink"  src="images/illustration/drink.png" alt="Sampark Hamesha" style="display: none;">
+              <img id="smok"  src="images/illustration/smok.png" alt="Sampark Hamesha" style="display: none;">
+              <img id="singal"  src="images/illustration/singal.png" alt="Sampark Hamesha" style="display: block;opacity: 0;">
+              <img id="two"  src="images/illustration/two.png" alt="Sampark Hamesha" style="display: block;opacity: 0;">
+             <!--smook container for nonvage start here-->
+               <div class="smoke-container" style="display: block;">
+				      <svg width="90px" height="90px" viewbox="0 0 31 73">
+				        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				          <g class="smokes" transform="translate(2.000000, 2.000000)" stroke="#fcfff3" stroke-width="4">
+				            <g class="smoke-1">
+				              <path id="Shape1" d="M0.5,8.8817842e-16 C0.5,8.8817842e-16 3.5,5.875 3.5,11.75 C3.5,17.625 0.5,17.625 0.5,23.5 C0.5,29.375 3.5,29.375 3.5,35.25 C3.5,41.125 0.5,41.125 0.5,47"></path>
+				            </g>
+				            <g class="smoke-2">
+				              <path id="Shape2" d="M0.5,8.8817842e-16 C0.5,8.8817842e-16 3.5,5.875 3.5,11.75 C3.5,17.625 0.5,17.625 0.5,23.5 C0.5,29.375 3.5,29.375 3.5,35.25 C3.5,41.125 0.5,41.125 0.5,47"></path>
+				            </g>
+				            <g class="smoke-3">
+				              <path id="Shape3" d="M0.5,8.8817842e-16 C0.5,8.8817842e-16 3.5,5.875 3.5,11.75 C3.5,17.625 0.5,17.625 0.5,23.5 C0.5,29.375 3.5,29.375 3.5,35.25 C3.5,41.125 0.5,41.125 0.5,47"></path>
+				            </g>
+				          </g>
+				        </g>
+				      </svg>
+				    </div>
+			 <!--smook container for nonvage end here-->
+			 <!--smook container for cigrate start here-->
+               <div class="smoke-container-cigrate" style="display: block;">
+				      <svg width="90px" height="90px" viewbox="0 0 31 73">
+				        <g stroke="#fcfff3" stroke-width="1" fill="none" fill-rule="evenodd">
+				          <g class="smokes" transform="translate(2.000000, 2.000000)" stroke="#fcfff3" stroke-width="2">
+				            <g class="smoke-1">
+				              <path id="Shape1" d="M0.5,8.8817842e-16 C0.5,8.8817842e-16 3.5,5.875 3.5,11.75 C3.5,17.625 0.5,17.625 0.5,23.5 C0.5,29.375 3.5,29.375 3.5,35.25 C3.5,41.125 0.5,41.125 0.5,47"></path>
+				            </g>
+				            <g class="smoke-2">
+				              <path id="Shape2" d="M0.5,8.8817842e-16 C0.5,8.8817842e-16 3.5,5.875 3.5,11.75 C3.5,17.625 0.5,17.625 0.5,23.5 C0.5,29.375 3.5,29.375 3.5,35.25 C3.5,41.125 0.5,41.125 0.5,47"></path>
+				            </g>
+				          </g>
+				        </g>
+				      </svg>
+				    </div>
+			 <!--smook container for cigrate end here-->
+              
+
+          </div>
+        </div>
+        <!-- <div  class="hide login-right">
+          <div class="login-img">
+            <img id="age-1" class="male" src="images/male2.svg" alt="Sampark Hamesha">
+            <img id="img2" class="female" src="images/fmale.svg" alt="Sampark Hamesha">
+          </div>
+        </div> -->
+       <!--  <div id="img2" class="hide login-right ">
+          <div class="login-img">
+            <img src="images/male.svg" alt="Sampark Hamesha">
+          </div>
+        </div>
+        <div id="img3" class="hide login-right ">
+          <div class="login-img">
+            <img src="images/male2.svg" alt="Sampark Hamesha">
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('.slider-input').jRange({
+      from: 4,
+      to: 7.5,
+      step: .1,
+      scale: [4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5],
+      width: 451,
+      showLabels: true,
+      range: false
+    });
+     $('.slider-input-weight').jRange({
+      from: 35,
+      to: 65,
+      scale: [35, 45, 55, 64],
+      width: 451,
+      showLabels: true,
+      range: false
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sampark Hamesha - Personal Information</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#e85b72" /> 
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/jquery.range.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="ICON" href="images/fevicon/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut ICON" href="/images/fevicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/fevicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/fevicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/fevicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/fevicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/fevicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/fevicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/fevicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/fevicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/fevicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/fevicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/fevicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/fevicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/fevicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800,900" rel="stylesheet">
+  <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/jquery.range.js"></script>
+
+
+  <script type="text/javascript">
+     function openNav() {
+    document.getElementById("mySidenav").style.right = "0%";
+     document.getElementById("faded-bg").style.display = "block";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.right = "-50%";
+        document.getElementById("faded-bg").style.display = "none";
+    }
+     $(document).ready(function() {
+     	 $(".profile-drop").click(function(){
+			    $("#myDropdown").toggle();
+			});
+     	 $('#edit').click(function(){ 
+     	     $("#update").css("display", "inline-block"); 
+     	     $("#edit").css("display", "none"); 
+		   $('.disabledCheckboxes').prop("disabled", false);
+		    
+		  });
+      $('.nav-tabs > li > a').on('click touchstart',function(event) {
+        event.preventDefault(); //stop browser to take action for clicked anchor
+        
+        //get displaying tab content jQuery selector
+        var active_tab_selector = $('.nav-tabs > li.active > a').attr('href');
+
+        //find actived navigation and remove 'active' css
+        var actived_nav = $('.nav-tabs > li.active');
+        actived_nav.removeClass('active');
+
+        //add 'active' css into clicked navigation
+        $(this).parents('li').addClass('active');
+
+        //hide displaying tab content
+        $(active_tab_selector).removeClass('active');
+        $(active_tab_selector).addClass('hide');
+
+
+        //show target tab content
+        var target_tab_selector = $(this).attr('href');
+        $(target_tab_selector).removeClass('hide');
+        $(target_tab_selector).addClass('active');
+      });
+       // $('.nav-tabs>li>a').click(function(){
+       //   $('.tab-content').toggle('fade');
+       // });
+    });
+    $(function(){
+  $('.hide-show').show();
+  $('.hide-show span').addClass('show')
+  
+  $('.hide-show span').click(function(){
+    if( $(this).hasClass('show') ) {
+      
+      $('input[name="login[password]"]').attr('type','text');
+      $(this).removeClass('show');
+    } else {
+       
+       $('input[name="login[password]"]').attr('type','password');
+       $(this).addClass('show');
+    }
+  });
+  
+  $('form button[type="submit"]').on('click', function(){
+    $('.hide-show span').addClass('show');
+    $('.hide-show').parent().find('input[name="login[password]"]').attr('type','password');
+  }); 
+});
+  </script>
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+     <div class="custom-container">
+        <span id="faded-bg" style="display: none;" onclick="closeNav()"></span>
+        <div class="menu">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Sampark Hamesha Logo"></a>
+          </div>
+          
+          
+          <button id="toggle-menu" class="toggle-btn" onclick="openNav()">
+              <img src="images/menu.png" class="menu-open">
+          </button>
+          <div class="profile-more">
+            <a  class="avtar profile-drop"><img src="images/profile-img.png" alt="Profile Image"></a>
+            <a href="#" class="more" style="display: none;"><img src="images/plus.svg" alt="plus icon"></a>
+          </div>
+            <div id="myDropdown" class="dropdown-content">
+			    <a href="my-profile.html">My profile</a>
+			    <a href="#">Logout</a>
+			 </div>
+            <ul id="mySidenav"  class="menu-bar">
+                         <span id="#faded-bg" onclick="closeNav()"></span>
+                <!--  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                <!-- <img src="images/menu-cross.png" class="menu-close"> -->
+                
+                <li class="welcome-li">
+                  <div class="welcome-login">
+                  <a href="#"><span>Welcome, Sonika</span></a>
+                </div>
+                </li>
+                
+                 <li><img class="category-icon" src="images/category-icon/prescription.svg"><a href="prescription.html">Prescriptions</a></li>
+                <li><img class="category-icon" src="images/body-scan.svg"><a href="body-scans.html">Body Scans</a></li>
+                <li><img class="category-icon" src="images/category-icon/leb-report.svg"><a href="lab-reports.html">Lab Reports</a></li>
+                <li><img class="category-icon" src="images/category-icon/activity-traker.svg"><a href="activity-tracker.html">Activity Tracker</a></li>
+                <li><img class="category-icon" src="images/category-icon/Diseases-Care.svg"><a href="health-care.html">Health Care</a></li>
+                <li><img class="category-icon" src="images/category-icon/reminders.svg"><a href="pill-reminder.html">Reminders</a></li>
+                 <li class="log-out-li"><img class="category-icon" src="images/category-icon/logout.svg"><a href="#">Log out</a></li>
+                <li class="profile profile-drop" ><a  ><img src="images/profile-img.png" alt="Profile Image"></a></li>
+                <li class="plus" style="display: none;"><a href="#"><img src="images/plus.svg" alt="plus icon"></a></li>
+             </ul>
+     
+          
+        </div>
+        
+      </div>
+    </header>
+    <div class="custom-container">
+      <div class="main-wrapper">
+         <div class="sub-heading">
+           <h2>Your basic account info</h2>
+         </div>
+         <div class="main-heading">
+           <h1>My Profile Information</h1>
+         </div>
+        <div class="main-content">
+             <div class="profile-tebs">
+                <ul class="nav nav-tabs">
+                   <li class="active">
+                     <a href="#basic">
+                        <img class="before-hover" src="images/profile.svg"><img class="after-hover" src="images/hover-profile.svg">Basic
+                      </a>
+                   </li>
+                   <li>
+                     <a href="#account">
+                       <img class="before-hover" src="images/hover-setting.svg"><img class="after-hover" src="images/account.svg">Account
+                     </a>
+                   </li>
+                </ul>
+             </div>
+              <div class="tebs-content">
+                <div  id="basic" class="profile tab-content active">
+                   <form class="form-horizontal" action="">
+                      <div class="form-group">
+                        <label>What’s your gender?</label>
+                        <input type="radio" name="rad1" id="male" checked="checked">
+                        <input type="radio" name="rad1" id="female" class="disabledCheckboxes" disabled>
+                      </div>
+                      <div class="form-group">
+                        <label>Which age group describes you?</label>
+                        <div class="multiple-input">
+                          <input type="radio" id="age1" name="age" class="disabledCheckboxes" disabled> <label for="age1" class="age"> < 35 </label>
+                          <input type="radio" id="age2" name="age" checked="checked"> <label for="age2" class="age">35-44</label>
+                          <input type="radio" id="age3" name="age" class="disabledCheckboxes" disabled> <label for="age3" class="age">45-54</label>
+                          <input type="radio" id="age4" name="age" class="disabledCheckboxes" disabled> <label for="age4" class="age">55-64</label>
+                          <input type="radio" id="age5" name="age" class="disabledCheckboxes" disabled> <label for="age5" class="age">65 ></label>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>Your height <span>(inch)</span></label>
+                          <input type="hidden" class="slider-input" value="7.5" id="ranger" disabled/>
+                      </div>
+                      <div class="form-group">
+                        <label>Your weight <span>(KG)</span></label>
+                        <div class="multiple-input">
+                          <input type="radio" id="weight1" name="weight" class="disabledCheckboxes" disabled> <label for="weight1" class="age"> < 35 </label>
+                          <input type="radio" id="weight2" name="weight" class="disabledCheckboxes" disabled> <label for="weight2" class="age">35-44</label>
+                          <input type="radio" id="weight3" name="weight" class="disabledCheckboxes" disabled> <label for="weight3" class="age">45-54</label>
+                          <input type="radio" id="weight4" name="weight" checked="checked" class="disabledCheckboxes" disabled> <label for="weight4" class="age" >55-64</label>
+                          <input type="radio" id="weight5" name="weight" class="disabledCheckboxes" disabled> <label for="weight5" class="age">65 ></label>
+                        </div>
+                        <div class="bmi-score">
+                          <heading>27.4</heading>
+                          <p>Your BMI score <br> <span>Score calculated based on your height and weight</span></p>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>Your prefered meal choice?</label>
+                        <input type="radio" name="meal" id="broccoli" checked="checked">
+                        <input type="radio" name="meal" id="prosciutto" class="disabledCheckboxes" disabled>
+                      </div>
+                      <div class="form-group">
+                        <label>How often do you exercise?</label>
+                        <div class="multiple-input">
+                          <input type="radio" id="exercise1" name="exercise" class="disabledCheckboxes" disabled><label for="exercise1" class="input-120">Vigorous</label>
+                          <input type="radio" id="exercise2" name="exercise" checked="checked"><label for="exercise2" class="input-120">Moderate</label>
+                          <input type="radio" id="exercise3" name="exercise" class="disabledCheckboxes" disabled><label for="exercise3" class="input-120">No Exercise</label>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>Do you smoke currently ?</label>
+                        <div class="multiple-input">
+                          <input type="radio" name="smoke" id="yes" class="disabledCheckboxes" disabled><label for="yes" class="input-120"> Yes </label>
+                          <input type="radio" name="smoke" id="no" checked="checked"><label for="no" class="input-120" > No </label>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>Do you consume alcohol ?</label>
+                        <div class="multiple-input">
+                          <input type="radio" name="drink" id="drink-yes" class="disabledCheckboxes" disabled><label for="drink-yes" class="input-120"> Yes </label>
+                          <input type="radio" name="drink" id="drink-no" checked="checked"><label for="drink-no" class="input-120" > No </label>
+                        </div>
+                      </div>
+                      <div class="button">
+                        <button type="button" id="edit" class="default-btn submit ">Edit</button>
+                        <button type="submit" id="update" class="default-btn submit " style="display: none;">Update</button>
+                        <button type="submit" class="default-btn skip">Cancel</button>
+                      </div>
+                   </form>
+                </div>
+                <div id="account" class="account tab-content hide">
+                     <h1>Account Settings</h1>
+                     <div class="form-horizontal">
+                       <div class="form-group">
+                         <label>Name</label>
+                         <input type="text" name="" value="rahul">
+                       </div>
+                       <div class="form-group">
+                         <label>Email</label>
+                         <input type="email" name="" value="rahul@gmail.com">
+                       </div>
+                       <div class="form-group">
+                         <label>Password</label>
+                         <input type="email" name="" value="rahul@gmail.com">
+                       </div>
+                       <div class="form-group">
+                         <label>New Password</label>
+                         <input class="password" required name="login[password]" type="password" />
+                          <div class="hide-show">
+                            <span>
+                               <img class="hide" src="images/hide.svg">
+                               <img class="show" src="images/show.svg">
+                             </span>
+                          </div>
+                       </div>
+                       <div class="form-group">
+                         <label>Confirm Password</label>
+                         <input class="password" required name="login[password]" type="password" />
+                          <div class="hide-show">
+                            <span>
+                               <img class="hide" src="images/hide.svg">
+                               <img class="show" src="images/show.svg">
+                             </span>
+                          </div>
+                       </div>
+                       <div class="button"> 
+                          <button class="btn-back back2 default-btn">Cancel</button>
+                          <button class="btn-next default-btn">Update</button>
+                       </div>
+                       
+                     </div>
+                </div>
+                 
+             </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+<script>
+    $('.slider-input').jRange({
+      from: 4,
+      to: 7.5,
+      step: .1,
+      scale: [4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5],
+      width: 451,
+      showLabels: true,
+      range: false
+    });
+  </script>
+  
+</body>
+
+</html>

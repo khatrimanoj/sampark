@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="50" cy="50" r="50"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Disease-care" transform="translate(-161.000000, -795.000000)">
+            <g id="Group" transform="translate(120.000000, 717.000000)">
+                <g id="Page-1" transform="translate(41.000000, 78.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#F2F2EF" xlink:href="#path-1"></use>
+                    <g id="179" mask="url(#mask-2)" fill-rule="nonzero">
+                        <g transform="translate(28.000000, 20.000000)" id="Shape">
+                            <path d="M0,26 L0.570123344,40.0381093 L2.28049338,84.0085672 C2.35175879,85.6844904 3.70580174,87 5.3627227,87 L33.6372773,87 C35.2941983,87 36.6482412,85.6844904 36.7195066,84.0085672 L38.4298767,40.0381093 L39,26 L0,26 Z" fill="#F6BD70"></path>
+                            <polygon fill="#FBD984" points="39 26 0 26 0.569602921 40 38.412597 40"></polygon>
+                            <polygon fill="#EFF3F5" points="40.7450163 0 45 1.68116896 23.2551649 55 19 53.318831"></polygon>
+                            <polygon fill="#F1786B" points="40.9122807 11 38 6.25754885 40.0877193 1 43 5.74245115"></polygon>
+                            <polygon fill="#F1786B" points="36.9122807 22 34 17.2575488 36.0877193 12 39 16.7424512"></polygon>
+                            <polygon fill="#F1786B" points="32.9122807 33 30 28.2575488 32.0877193 23 35 27.7424512"></polygon>
+                            <polygon fill="#F1786B" points="27.9049296 44 25 39.2575488 27.0774648 34 30 38.7424512"></polygon>
+                            <polygon fill="#F1786B" points="23.9122807 54 21 49.2575488 23.0877193 44 26 48.7424512"></polygon>
+                            <polygon fill="#FFFFFF" points="11.8341555 45 14 51.8341117 7.16566253 54 5 47.1657063"></polygon>
+                            <polygon fill="#FFFFFF" points="30 59.5902689 20.3515924 64 16 54.3918054 25.6305732 50"></polygon>
+                            <polygon fill="#FFFFFF" points="16.5236908 81 9 74.4608696 15.4763092 67 23 73.5217391"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

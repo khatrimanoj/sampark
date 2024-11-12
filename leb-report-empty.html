@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sampark Hamesha - Personal Information</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#e85b72" /> 
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="ICON" href="images/fevicon/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut ICON" href="/images/fevicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/fevicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/fevicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/fevicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/fevicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/fevicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/fevicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/fevicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/fevicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/fevicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/fevicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/fevicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/fevicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/fevicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#e85b72" /> 
+  <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800,900" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+  <script>
+    function openNav() {
+    document.getElementById("mySidenav").style.right = "0%";
+     document.getElementById("faded-bg").style.display = "block";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.right = "-50%";
+        document.getElementById("faded-bg").style.display = "none";
+    }
+    $( document ).ready(function() {
+    $(".profile-drop").click(function(){
+          $("#myDropdown").toggle();
+       });
+    $('.drop-down button').on('click',function(){
+        $('.drop-down .drop-down-ul').toggle();
+    });
+    });
+     $( document ).ready(function() {
+      $(".close").click(function () {
+    $(".toggle-model").css("display", "none");
+     });
+   
+    });
+    $( document ).ready(function() {
+        $('#model-upload').on('click',function(){
+            $('.toggle-model').toggle();
+        });
+        $(document).keyup(function(e) {
+          if (e.which == 27) {
+               $(".toggle-model").css("display", "none"); 
+          }
+          });
+    });
+    /*upload image script start here*/
+$( document ).ready(function() {
+    document.querySelector("html").classList.add('js');
+       
+      // initialisation des variables
+      var fileInput1  = document.querySelector( ".input-file1" ), 
+          button1     = document.querySelector( ".input-file-trigger1" )
+       
+      // action lorsque la "barre d'espace" ou "Entrée" est pressée
+      button1.addEventListener( "keydown", function( event ) {
+          if ( event.keyCode == 13 || event.keyCode == 32 ) {
+              fileInput1.focus();
+          }
+      });
+       
+      // action lorsque le label est cliqué
+      button1.addEventListener( "click", function( event ) {
+         fileInput1.focus();
+         return false;
+      });
+
+    
+      // affiche un retour visuel dès que input:file change
+      fileInput1.addEventListener( "change", function( event ) {  
+          //the_return.innerHTML = this.value;
+          $('.labelFU1').text("" + this.value);
+      });
+       // affiche un retour visuel dès que input:file change
+     
+
+});
+   /*datepicker js start here*/
+$(function() {
+  $( ".calendar" ).datepicker({
+    dateFormat: 'dd/mm/yy',
+    firstDay: 1
+  });
+  
+  $(document).on('click', '.date-picker .input', function(e){
+    var $me = $(this),
+        $parent = $me.parents('.date-picker');
+    $parent.toggleClass('open');
+  });
+  
+  
+  $(".calendar").on("change",function(){
+    var $me = $(this),
+        $selected = $me.val(),
+        $parent = $me.parents('.date-picker');
+    $parent.find('.result').children('span').html($selected);
+  });
+});
+  /*datepicker js end here*/
+</script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <div class="custom-container">
+        <span id="faded-bg" style="display: none;" onclick="closeNav()"></span>
+        <div class="menu">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Sampark Hamesha Logo"></a>
+          </div>
+          
+          
+          <button id="toggle-menu" class="toggle-btn" onclick="openNav()">
+              <img src="images/menu.png" class="menu-open">
+          </button>
+          <div class="profile-more">
+            <a class="avtar profile-drop"><img src="images/profile-img.png" alt="Profile Image"></a>
+            <a href="#" class="more" style="display: none;"><img src="images/plus.svg" alt="plus icon"></a>
+          </div>
+           <div id="myDropdown" class="dropdown-content">
+              <a href="my-profile.html">My profile</a>
+              <a href="#">Logout</a>
+           </div>
+            <ul id="mySidenav"  class="menu-bar">
+                         <span id="#faded-bg" onclick="closeNav()"></span>
+                <!--  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                <!-- <img src="images/menu-cross.png" class="menu-close"> -->
+                
+                <li class="welcome-li">
+                  <div class="welcome-login">
+                  <a href="#"><span>Welcome, Sonika</span></a>
+                </div>
+                </li>
+                
+                 <li><img class="category-icon" src="images/category-icon/prescription.svg"><a href="prescription.html">Prescriptions</a></li>
+                <li><img class="category-icon" src="images/body-scan.svg"><a href="body-scans.html">Body Scans</a></li>
+                <li><img class="category-icon" src="images/category-icon/leb-report.svg"><a href="lab-reports.html">Lab Reports</a></li>
+                <li><img class="category-icon" src="images/category-icon/activity-traker.svg"><a href="activity-tracker.html">Activity Tracker</a></li>
+               <li><img class="category-icon" src="images/category-icon/Diseases-Care.svg"><a href="health-care.html">Health Care</a></li>
+                <li><img class="category-icon" src="images/category-icon/reminders.svg"><a href="pill-reminder.html">Reminders</a></li>
+                 <li class="log-out-li"><img class="category-icon" src="images/category-icon/logout.svg"><a href="#">Log out</a></li>
+                <li class="profile profile-drop"><a><img src="images/profile-img.png" alt="Profile Image"></a></li>
+                <li class="plus" style="display: none;"><a href="#"><img src="images/plus.svg" alt="plus icon"></a></li>
+             </ul>
+     
+          
+        </div>
+        
+      </div>
+    </header>
+    <div class="custom-container">
+      <div class="main-wrapper">
+        <div class="upload-heading">
+               <div class="sub-heading">
+              <h2>Upload or choose all your lab reports</h2>
+            </div>
+            <div class="main-heading">
+              <h1>Your All Lab Reports at one place</h1>
+            </div>
+        </div>
+        
+        <div class="update-now-btn">
+          <button id="model-upload">
+            Upload Lab Report
+          </button>
+        </div>
+        <div class="toggle-model">
+            <div class="overlay">
+            </div>
+            <div class="uploding-form">
+              <div class="close">×</div>
+                   <h1>Add New Lab Reports</h1>
+              <div class="form-horizontal">
+                 <div class="form-group date">
+                   <label>Report Issue Date</label>
+                   <div class="date-picker">
+                      <div class="input">
+                        <div class="result"> <span></span></div>
+                        <button><i class="calendar"></i></button>
+                      </div>
+                      <div class="calendar"></div>
+                    </div>
+                 </div>
+                 <div class="form-group">
+                   <label>Lab Report Name</label>
+                   <input type="text" class="form-control" placeholder="Name" value="Cardiac Calcium Scoring">
+                 </div>
+                 <div class="form-group">
+                   <label>Lab Name</label>
+                   <input type="text" class="form-control" placeholder="Name" value="INS  institute Hospital">
+                 </div>
+                 <div class="form-group">
+                   <label>Description</label>
+                   <textarea></textarea>
+                 </div>
+                 
+                 <div class="form-group">
+                  <label>Upload Report</label>
+                    <div id='divHabilitSelectors' class="input-file-container">
+                      <input class="input-file1" id="fileupload1" name="files" type="file" multiple> 
+                      <label for="fileupload1" class="input-file-trigger1 labelFU1"  tabindex="0"><img src="images/attachment.png">  Upload Attachment</label>
+                    </div>
+                 </div>
+                 <div class="button"> 
+                    <button class="btn-back back2 default-btn">Discard</button>
+                    <button class="btn-next default-btn">Save</button>
+                 </div>
+              </div>
+            </div>
+        </div>
+        <div class="empty-img">
+              <img src="images/14-layers.png">
+              <h1>you have not upload any Prescription Report. </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

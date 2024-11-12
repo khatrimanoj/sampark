@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="50" cy="50" r="50"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Disease-care" transform="translate(-161.000000, -1075.000000)">
+            <g id="Group" transform="translate(120.000000, 997.000000)">
+                <g id="Page-1" transform="translate(41.000000, 78.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#F2F2EF" xlink:href="#path-1"></use>
+                    <g id="drop" mask="url(#mask-2)">
+                        <g transform="translate(-8.000000, 23.000000)">
+                            <g id="11" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(38.000000, 8.000000)">
+                                <path d="M14.8524478,39.3180774 L14.8524478,43.839977 C14.8524478,44.9303642 15.7487162,45.8283301 16.8370421,45.8283301 L25.3195823,45.8283301 C26.4079083,45.8283301 27.3041767,44.9303642 27.3041767,43.839977 L27.3041767,39.3180774 L14.8524478,39.3180774 Z" id="Shape" fill="#F6BD70" fill-rule="nonzero"></path>
+                                <ellipse id="Oval" fill="#FBD984" fill-rule="nonzero" cx="21.094317" cy="21.1342684" rx="21.094317" ry="21.1342684"></ellipse>
+                                <ellipse id="Oval" fill="#DBDFE0" fill-rule="nonzero" cx="21.094317" cy="21.1342684" rx="18.1814447" ry="18.2158793"></ellipse>
+                                <path d="M23.5910647,21.1342684 C23.5910647,22.5132874 22.4707292,23.6357448 21.094317,23.6357448 C19.7179048,23.6357448 18.5975693,22.5132874 18.5975693,21.1342684 C18.5975693,19.7552493 21.094317,5.93298885 21.094317,5.93298885 C21.094317,5.93298885 23.5910647,19.7552493 23.5910647,21.1342684 Z" id="Shape" fill="#F1786B" fill-rule="nonzero"></path>
+                            </g>
+                            <path d="M28,72 C14.2364353,72 0,61.5917139 0,44.1742531 C0,27.5280401 25.7352941,1.5612822 26.8306541,0.463949318 C27.4499153,-0.154649773 28.5501012,-0.154649773 29.1693459,0.463949318 C30.2647059,1.5612822 56,27.5280401 56,44.1742531 C56,61.5917139 41.7635647,72 28,72 Z" id="Shape" fill="#E85B72" fill-rule="nonzero"></path>
+                            <path d="M27.375,56 C24.42413,56 16,53.9100387 16,44.625 C16,43.7275937 16.7275937,43 17.625,43 C18.5224063,43 19.25,43.7275937 19.25,44.625 C19.25,52.400885 27.294075,52.75 27.375,52.75 C28.2724063,52.75 29,53.4775937 29,54.375 C29,55.2724063 28.2724063,56 27.375,56 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

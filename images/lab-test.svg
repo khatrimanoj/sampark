@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="50" cy="50" r="50"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Solution_page_v1" transform="translate(-769.000000, -1254.000000)">
+            <g id="Group" transform="translate(319.000000, 1224.000000)">
+                <g id="Card_2" transform="translate(420.000000, 0.000000)">
+                    <g id="Group-9" transform="translate(30.000000, 30.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#EAEAEA" xlink:href="#path-1"></use>
+                        <g id="Labtest" mask="url(#mask-2)">
+                            <g transform="translate(12.500000, 30.000000)" id="162">
+                                <g>
+                                    <path d="M2.04724409,5.92519685 L2.04724409,87.2637795 C2.04724409,94.2913386 7.73622047,99.980315 14.7637795,99.980315 C21.7913386,99.980315 27.480315,94.2913386 27.480315,87.2637795 L27.480315,5.92519685 L2.04724409,5.92519685 Z" id="Shape" fill="#EFF3F5" fill-rule="nonzero"></path>
+                                    <path d="M5.6496063,40.3149606 L5.6496063,87.2834646 C5.6496063,92.3228346 9.74409449,96.4173228 14.7834646,96.4173228 C19.8228346,96.4173228 23.9173228,92.3228346 23.9173228,87.2834646 L23.9173228,40.3149606 L5.6496063,40.3149606 Z" id="Shape" fill="#5AC8AE" fill-rule="nonzero"></path>
+                                    <polygon id="Shape" fill="#DBDFE0" fill-rule="nonzero" points="0 0 29.5669291 0 29.5669291 5.92519685 0 5.92519685"></polygon>
+                                    <path d="M72.5,5.92519685 L72.5,87.2637795 C72.5,94.2913386 78.1889764,99.980315 85.2165354,99.980315 C92.2440945,99.980315 97.9330709,94.2913386 97.9330709,87.2637795 L97.9330709,5.92519685 L72.5,5.92519685 Z" id="Shape" fill="#EFF3F5" fill-rule="nonzero"></path>
+                                    <path d="M76.0826772,58.996063 L76.0826772,87.2834646 C76.0826772,92.3228346 80.1771654,96.4173228 85.2165354,96.4173228 C90.2559055,96.4173228 94.3503937,92.3228346 94.3503937,87.2834646 L94.3503937,58.996063 L76.0826772,58.996063 Z" id="Shape" fill="#41B3E2" fill-rule="nonzero"></path>
+                                    <polygon id="Shape" fill="#DBDFE0" fill-rule="nonzero" points="70.4330709 0 100 0 100 5.92519685 70.4330709 5.92519685"></polygon>
+                                    <path d="M37.2834646,5.92519685 L37.2834646,87.2637795 C37.2834646,94.2913386 42.9724409,99.980315 50,99.980315 C57.0275591,99.980315 62.7165354,94.2913386 62.7165354,87.2637795 L62.7165354,5.92519685 L37.2834646,5.92519685 Z" id="Shape" fill="#EFF3F5" fill-rule="nonzero"></path>
+                                    <path d="M40.8661417,25.1574803 L40.8661417,87.2834646 C40.8661417,92.3228346 44.9606299,96.4173228 50,96.4173228 C55.0393701,96.4173228 59.1338583,92.3228346 59.1338583,87.2834646 L59.1338583,25.1574803 L40.8661417,25.1574803 Z" id="Shape" fill="#FBD984" fill-rule="nonzero"></path>
+                                    <polygon id="Shape" fill="#DBDFE0" fill-rule="nonzero" points="35.2165354 0 64.7834646 0 64.7834646 5.92519685 35.2165354 5.92519685"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

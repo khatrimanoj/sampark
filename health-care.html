@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sampark Hamesha - Personal Information</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#e85b72" />
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="ICON" href="images/fevicon/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut ICON" href="/images/fevicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/fevicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/fevicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/fevicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/fevicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/fevicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/fevicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/fevicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/fevicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/fevicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/fevicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/fevicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/fevicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/fevicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#e85b72" />
+  <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800,900" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+  <script>
+    function openNav() {
+    document.getElementById("mySidenav").style.right = "0%";
+     document.getElementById("faded-bg").style.display = "block";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.right = "-50%";
+        document.getElementById("faded-bg").style.display = "none";
+    }
+    $( document ).ready(function() {
+      $(".profile-drop").click(function(){
+          $("#myDropdown").toggle();
+      });
+    $('.drop-down button').on('click',function(){
+        $('.drop-down .drop-down-ul').toggle();
+    });
+    });
+     $( document ).ready(function() {
+      $(".close").click(function () {
+    $(".toggle-model").css("display", "none");
+     });
+
+    });
+    $( document ).ready(function() {
+        $('#model-upload').on('click',function(){
+            $('.toggle-model').toggle();
+        });
+        $(document).keyup(function(e) {
+          if (e.which == 27) {
+               $(".toggle-model").css("display", "none");
+          }
+          });
+
+    });
+   $(document).ready(function(){
+
+  //hides dropdown content
+  $(".size_chart").hide();
+
+  //unhides first option content
+  $("#option1").show();
+
+  //listen to dropdown for change
+  $("#size_select").change(function(){
+    //rehide content on change
+    $('.size_chart').hide();
+    //unhides current item
+    $('#'+$(this).val()).show();
+  });
+
+});
+$( document ).ready(function() {
+     /*datepicker js start here*/
+$(function() {
+  $( ".calendar" ).datepicker({
+    dateFormat: 'dd/mm/yy',
+    firstDay: 1
+  });
+  
+  $(document).on('click', '.date-picker .input', function(e){
+    var $me = $(this),
+        $parent = $me.parents('.date-picker');
+    $parent.toggleClass('open');
+  });
+  
+  
+  $(".calendar").on("change",function(){
+    var $me = $(this),
+        $selected = $me.val(),
+        $parent = $me.parents('.date-picker');
+    $parent.find('.result').children('span').html($selected);
+  });
+});
+});
+  /*datepicker js end here*/
+  </script>
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['date', 'BLOOD GLOCOSE', 'BLOOD PRESSURE'],
+          ['1 April',  1000,      400],
+          ['2 April',  1000,      400],
+          ['3 April',  1170,      460],
+          ['4 April',  660,       1120],
+          ['6 April',  1030,      840],
+          ['7 April',  1030,      740],
+          ['8 April',  1030,      240],
+          ['9 April',  1030,      140],
+          ['10 April',  1030,     940],
+          ['11 April',  1030,     640],
+          ['12 April',  1030,     240],
+          ['13 April',  1030,     740],
+          ['14 April',  1030,     840],
+          ['15 April',  1030,     640],
+          ['16 April',  1030,     540],
+          ['17 April',  1030,     440],
+          ['18 April',  1030,     340],
+          ['19 April',  1030,     840],
+          ['20 April',  1030,     540],
+          ['21 April',  1030,     515],
+          ['22 April',  1030,     717],
+          ['23 April',  1030,     818],
+          ['24 April',  1030,     525],
+          ['25 April',  1030,     852],
+          ['26 April',  1030,     606],
+          ['27 April',  1030,     808],
+          ['28 April',  1030,     505],
+          ['29 April',  1030,     101],
+          ['30 April',  1030,     56],
+          ['31 April',  1030,     350],
+        ]);
+
+        var options = {
+          curveType: 'function',
+          legend: { position: 'top' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <div class="custom-container">
+        <span id="faded-bg" style="display: none;" onclick="closeNav()"></span>
+        <div class="menu">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Sampark Hamesha Logo"></a>
+          </div>
+
+
+          <button id="toggle-menu" class="toggle-btn" onclick="openNav()">
+              <img src="images/menu.png" class="menu-open">
+          </button>
+          <div class="profile-more">
+            <a class="avtar profile-drop"><img src="images/profile-img.png" alt="Profile Image"></a>
+            <a href="#" class="more" style="display: none;"><img src="images/plus.svg" alt="plus icon"></a>
+          </div>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="my-profile.html">My profile</a>
+              <a href="#">Logout</a>
+           </div>
+
+            <ul id="mySidenav"  class="menu-bar">
+                         <span id="#faded-bg" onclick="closeNav()"></span>
+                <!--  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                <!-- <img src="images/menu-cross.png" class="menu-close"> -->
+
+                <li class="welcome-li">
+                  <div class="welcome-login">
+                  <a href="#"><span>Welcome, Sonika</span></a>
+                </div>
+                </li>
+
+                 <li><img class="category-icon" src="images/category-icon/prescription.svg"><a href="prescription.html">Prescriptions</a></li>
+                <li><img class="category-icon" src="images/body-scan.svg"><a href="body-scans.html">Body Scans</a></li>
+                <li><img class="category-icon" src="images/category-icon/leb-report.svg"><a href="lab-reports.html">Lab Reports</a></li>
+                <li><img class="category-icon" src="images/category-icon/activity-traker.svg"><a href="activity-tracker.html">Activity Tracker</a></li>
+               <li><img class="category-icon" src="images/category-icon/Diseases-Care.svg"><a href="health-care.html">Health Care</a></li>
+                <li><img class="category-icon" src="images/category-icon/reminders.svg"><a href="pill-reminder.html">Reminders</a></li>
+                 <li class="log-out-li"><img class="category-icon" src="images/category-icon/logout.svg"><a href="#">Log out</a></li>
+                <li class="profile profile-drop"><a><img src="images/profile-img.png" alt="Profile Image"></a></li>
+                <li class="plus" style="display: none;"><a href="#"><img src="images/plus.svg" alt="plus icon"></a></li>
+             </ul>
+
+
+        </div>
+
+      </div>
+    </header>
+      <!--add activity popup start here-->
+            <div class="toggle-model">
+            <div class="overlay">
+            </div>
+            <div class="uploding-form activity">
+              <div class="close">×</div>
+                   <h1>Add New Activity</h1>
+              <div class="form-horizontal">
+                   <div class="form-group date">
+                   <label>Report Issue Date</label>
+                   <div class="date-picker">
+                      <div class="input">
+                        <div class="result"> <span></span></div>
+                        <button><i class="calendar"></i></button>
+                      </div>
+                      <div class="calendar"></div>
+                    </div>
+                 </div> 
+                 <div class="form-group date">
+                   <label>Select Activity</label>
+                   <div class="filter">
+                     <select required id="size_select" >
+                          <option value="option1"><span class="icon-dropdown-cycale"></span>BLOOD GLUCOSE</option>
+                          <option value="option2">BODY TEMP</option>
+                          <option value="option3">BLOOD PRESSURE</option>
+
+                        </select>
+                   </div>
+
+                 </div>
+                 <div class="form-group">
+                   <label>Please Enter The Value </label>
+                   <input type="text" class="form-control" placeholder="Enter Value">
+                   <span class="scale">
+                       <label  id="option1" class="size_chart">mg/dl</label>
+                       <label  id="option2" class="size_chart"><sup>0</sup>C</label>
+                       <label  id="option3" class="size_chart">mm/hg</label>
+                   </span>
+
+                 </div>
+                 <div class="button">
+                    <button class="btn-back back2 default-btn">Cancel</button>
+                    <button class="btn-next default-btn">Save</button>
+                 </div>
+              </div>
+            </div>
+        </div>
+         <!--add activity popup end here-->
+    <div class="custom-container">
+      <div class="main-wrapper">
+        <div class="upload-heading">
+               <div class="sub-heading">
+              <h2>Track and care for diseases</h2>
+            </div>
+            <div class="main-heading" >
+              <h1>Health Care</h1>
+            </div>
+        </div>
+
+         <div class="filter">
+          <select required>
+            <option value='' disabled selected>Last month..</option>
+            <option>january</option>
+            <option>february
+            <option>march
+          </select>
+
+          <select required>
+            <option value='' disabled selected>Filter by activity..</option>
+            <option value="option2">BODY TEMP</option>
+            <option value="option3">BLOOD PRESSURE</option>
+          </select>
+          <button class="add-activity-btn" id="model-upload">
+            <img src="images/plus.svg">
+            Add Activity
+          </button>
+         </div>
+          <!--chart start here-->
+           <div class="main-content chart">
+             <div class="chart">
+                <div id="curve_chart" style="width: 100%; height: 500px;"></div>
+             </div>
+           </div>
+           <!--chart end here-->
+           <div class="activity-tracker-heading">
+                <h2 class="title left">Today</h2>
+           </div>
+           <div class="activity-content">
+               <div class="activity-box no-margin-left">
+                   <div class="activity-img-box">
+                       <img src="images/Glocose.svg">
+                   </div>
+                   <div class="activity-text">
+                       <div class="text">
+                         <span>Blood Glucose</span>
+                         <h1>20mg/dl</h1>
+                         <label>April 27, 2018</label>
+                       </div>
+                   </div>
+               </div>
+
+
+           </div>
+           <div class="activity-tracker-heading">
+                <h2 class="title left">27 APRIL</h2>
+           </div>
+             <div class="activity-content">
+                 <div class="activity-box no-margin-left">
+                    <div class="activity-img-box">
+                       <img src="images/Blood presure.svg">
+                   </div>
+                   <div class="activity-text">
+                       <div class="text">
+                         <span>Blood Pressure</span>
+                         <h1>120/80</h1>
+                         <label>April 27, 2018</label>
+                       </div>
+                   </div>
+                 </div>
+
+                 <div class="activity-box no-margin-right">
+                  <div class="activity-img-box">
+                       <img src="images/Body temprature.svg">
+                   </div>
+                   <div class="activity-text">
+                       <div class="text">
+                         <span>Body temperature</span>
+                         <h1>97 C</h1>
+                         <label>April 27, 2018</label>
+                       </div>
+                   </div>
+                 </div>
+             </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

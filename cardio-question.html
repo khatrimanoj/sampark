@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sampark Hamesha - Personal Information</title>
+  <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#e85b72" /> 
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="ICON" href="images/fevicon/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut ICON" href="/images/fevicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/fevicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/fevicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/fevicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/fevicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/fevicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/fevicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/fevicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/fevicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/fevicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/fevicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/fevicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/fevicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/fevicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800,900" rel="stylesheet">
+  <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+
+  <script type="text/javascript">
+      function openNav() {
+    document.getElementById("mySidenav").style.right = "0%";
+     document.getElementById("faded-bg").style.display = "block";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.right = "-50%";
+        document.getElementById("faded-bg").style.display = "none";
+    }
+    jQuery(document).ready(function() {
+       $(".profile-drop").click(function(){
+          $("#myDropdown").toggle();
+      });
+      // Binding next button on first step
+      $(".open1").click(function() {
+          $(".frm").hide();
+          $("#que2").show();
+      });
+
+      // Binding next button on second step
+      $(".open2").click(function() {
+          $(".frm").hide();
+          $("#que3").show();
+      });
+
+      // Binding next button on second step
+      $(".open3").click(function() {
+          $(".frm").hide();
+          $("#que4").show();
+      });
+
+      // Binding next button on second step
+      $(".open4").click(function() {
+          $(".frm").hide();
+          $("#que5").show();
+      });
+
+      // Binding next button on second step
+      $(".open5").click(function() {
+          $(".frm").hide();
+          $("#que6").show();
+      });
+
+      // Binding back button on second step
+      $(".back2").click(function() {
+        $(".frm").hide();
+        $("#que1").show();
+      });
+
+
+      // Binding back button on third step
+      $(".back3").click(function() {
+        $(".frm").hide();
+        $("#que2").show();
+      });
+
+      // Binding back button on third step
+      $(".back4").click(function() {
+        $(".frm").hide();
+        $("#que3").show();
+      });
+
+      // Binding back button on third step
+      $(".back5").click(function() {
+        $(".frm").hide();
+        $("#que4").show();
+      });
+
+
+      // $(".open5").click(function() {
+      //     // optional
+      //     // used delay form submission for a seccond and show a loader image
+      //     $("#loader").show();
+      //     setTimeout(function() {
+      //       $("#cardioform").html(window.location.href="cardio-result.html");
+      //     },100);
+      //     // Remove this if you are not using ajax method for submitting values
+      //     return false;
+      // });
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+     <div class="custom-container">
+        <span id="faded-bg" style="display: none;" onclick="closeNav()"></span>
+        <div class="menu">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Sampark Hamesha Logo"></a>
+          </div>
+          
+          
+          <button id="toggle-menu" class="toggle-btn" onclick="openNav()">
+              <img src="images/menu.png" class="menu-open">
+          </button>
+          <div class="profile-more">
+            <a class="avtar profile-drop"><img src="images/profile-img.png" alt="Profile Image"></a>
+            <a href="#" class="more" style="display: none;"><img src="images/plus.svg" alt="plus icon"></a>
+          </div>
+           <div id="myDropdown" class="dropdown-content">
+              <a href="my-profile.html">My profile</a>
+              <a href="#">Logout</a>
+           </div>
+            <ul id="mySidenav"  class="menu-bar">
+                         <span id="#faded-bg" onclick="closeNav()"></span>
+                <!--  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                <!-- <img src="images/menu-cross.png" class="menu-close"> -->
+                
+                <li class="welcome-li">
+                  <div class="welcome-login">
+                  <a href="#"><span>Welcome, Sonika</span></a>
+                </div>
+                </li>
+                
+                 <li><img class="category-icon" src="images/category-icon/prescription.svg"><a href="prescription.html">Prescriptions</a></li>
+                <li><img class="category-icon" src="images/body-scan.svg"><a href="body-scans.html">Body Scans</a></li>
+                <li><img class="category-icon" src="images/category-icon/leb-report.svg"><a href="lab-reports.html">Lab Reports</a></li>
+                <li><img class="category-icon" src="images/category-icon/activity-traker.svg"><a href="activity-tracker.html">Activity Tracker</a></li>
+                <li><img class="category-icon" src="images/category-icon/Diseases-Care.svg"><a href="health-care.html">Health Care</a></li>
+                <li><img class="category-icon" src="images/category-icon/reminders.svg"><a href="pill-reminder.html">Reminders</a></li>
+                 <li class="log-out-li"><img class="category-icon" src="images/category-icon/logout.svg"><a href="#">Log out</a></li>
+                <li class="profile profile-drop"><a><img src="images/profile-img.png" alt="Profile Image"></a></li>
+                <li class="plus" style="display: none;"><a href="#"><img src="images/plus.svg" alt="plus icon"></a></li>
+             </ul>
+     
+          
+        </div>
+        
+      </div>
+    </header>
+    <div class="custom-container">
+      <div class="main-wrapper">
+        <div class="sub-heading">
+
+          <h2>Predict Diabetes Risk</h2>
+        </div>
+        <div class="main-heading">
+          <h1>Predict, manage & control</h1>
+        </div>
+        <div class="main-content fracture">
+          <form name="cardio-question-form" id="cardioform" method="post" action="">
+
+            <!-- id will be unique, but class name will be same -->
+            <div id="que1" class="frm">
+              <div class="question-answer">
+                <span class="ques-remain">0%</span>
+                <div class="meter" style="width: 150px;">
+                  <span style="width: 0%;"></span>
+                </div>
+                 <span class="i-help">i Help</span>
+                <div class="question">
+                  <div class="sub-heading">
+                    <h2>What is your Cholesterol Level (mg/l) ?</h2>
+                  </div>
+                </div>
+                <div class="answer">
+                  <label class="no-border">Total Cholesterol Level (Between 130-320)</label>
+                  <input type="text" class="form-control"><br><br>
+                  <label class="no-border">LDL Cholesterol	(Between 30-300)</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="button">
+                  <!-- open1 is given in the class that is binded with the click event -->
+                  <a class="btn-next open1 default-btn" type="button">Next</a>
+                </div>
+              </div>
+            </div>
+
+            <div id="que2" class="frm">
+              <div class="question-answer">
+                <span class="ques-remain">20% </span>
+                <div class="meter" style="width: 150px;">
+                  <span style="width: 20%;"></span>
+                </div>
+                 <span class="i-help">i Help</span>
+                <div class="question">
+                  <div class="sub-heading">
+                    <h2>Do you have History of Diabetes ? </h2>
+                  </div>
+                </div>
+                <div class="answer">
+                  <input type="radio" name="rad1" id="fhy"><label for="fhy">Yes</label>
+                  <input type="radio" name="rad1" id="fhn"><label for="fhn">No</label>
+                </div>
+                <div class="button">
+                  <!-- back2 unique class name  -->
+                  <a class="btn-back back2 default-btn" type="button">Back</a>
+                  <!-- open2 unique class name -->
+                  <a class="btn-next open2 default-btn" type="button">Next</a>
+                </div>
+              </div>
+            </div>
+
+            <div id="que3" class="frm">
+              <div class="question-answer">
+              <span class="ques-remain">40% </span>
+                <div class="meter" style="width: 150px;">
+                  <span style="width: 40%;"></span>
+                </div>
+                 <span class="i-help">i Help</span>
+                <div class="question">
+                  <div class="sub-heading">
+                    <h2>Are you on Hypertension Treatement?</h2>
+                  </div>
+                </div>
+                <div class="answer">
+                  <input type="radio" name="rad1" id="oty"><label for="oty">Yes</label>
+                  <input type="radio" name="rad1" id="otn"><label for="otn">No</label>
+                </div>
+                <div class="button">
+                  <!-- Unique class name -->
+                  <a class="btn-back back3 default-btn" type="button">Back</a>
+                  <!-- Unique class name -->
+                  <a class="btn-next open3 default-btn" type="button">Next </a>
+                </div>
+              </div>
+            </div>
+
+            <div id="que4" class="frm">
+              <div class="question-answer">
+                <span class="ques-remain">60% </span>
+                <div class="meter" style="width: 150px;">
+                  <span style="width: 60%;"></span>
+                </div>
+                 <span class="i-help">i Help</span>
+                <div class="question">
+                  <div class="sub-heading">
+                    <h2>Are you on statin ? </h2>
+                  </div>
+                </div>
+                <div class="answer">
+                  <input type="radio" name="rad1" id="ray"><label for="ray">Yes</label>
+                  <input type="radio" name="rad1" id="ran"><label for="ran">No</label>
+                </div>
+                <div class="button">
+                  <!-- Unique class name -->
+                  <a class="btn-back back4 default-btn" type="button">Back</a>
+                  <!-- Unique class name -->
+                  <a class="btn-next open4 default-btn" type="button">Next </a>
+                </div>
+              </div>
+            </div>
+            <div id="que5" class="frm">
+              <div class="question-answer">
+                <span class="ques-remain">80% </span>
+                <div class="meter" style="width: 150px;">
+                  <span style="width: 80%;"></span>
+                </div>
+                 <span class="i-help">i Help</span>
+                <div class="question">
+                  <div class="sub-heading">
+                    <h2>Are you on aspirin therapy ? </h2>
+                  </div>
+                </div>
+                <div class="answer">
+                  <input type="radio" name="rad1" id="gy"><label for="gy">Yes</label>
+                  <input type="radio" name="rad1" id="gn"><label for="gn">No</label>
+                </div>
+                <div class="button">
+                  <!-- Unique class name -->
+                  <a class="btn-back back5 default-btn" type="button">Back</a>
+                  <!-- Unique class name -->
+                  <a class="btn-next open5 default-btn" type="button" onclick="window.location.href='solution.html'">Submit </a>
+                </div>
+              </div>
+            </div>
+
+          </form>
+         </div>
+         <!--illustration start here-->
+         <div class="predict-illustration-left">
+           <div class="predict-illustration">
+                <img src="images/illustration/Asset 7.svg">
+             </div>
+         </div>
+         <!--illustration end here-->
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

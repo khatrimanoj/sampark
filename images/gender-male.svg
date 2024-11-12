@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="30" cy="30" r="30"></circle>
+        <polygon id="path-3" points="17.314275 15 34.62825 15 34.62825 0.35325 0.0003 0.35325 0.0003 15"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Person-info" transform="translate(-96.000000, -348.000000)">
+            <g id="Page-1" transform="translate(96.000000, 348.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#F2F2EF" xlink:href="#path-1"></use>
+                <g mask="url(#mask-2)">
+                    <g transform="translate(12.000000, 12.000000)">
+                        <g id="Group-3" stroke-width="1" fill="none" transform="translate(0.000000, 32.999925)">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                            <path d="M32.11755,5.16525 C31.76655,3.79125 30.6858,2.72175 29.3073,2.3865 L20.96805,0.35325 L13.54905,0.35325 L5.3133,2.382 C3.9393,2.72025 2.8623,3.78825 2.51205,5.15925 L0.0003,15 L34.62855,15 L32.11755,5.16525 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-4)"></path>
+                        </g>
+                        <path d="M22.128075,34.911 C19.445325,37.1025 15.183075,37.1025 12.500325,34.911 L12.500325,28.67325 L22.128075,28.67325 L22.128075,34.911 Z" id="Fill-4" fill="#FDC77C"></path>
+                        <path d="M31.8627,14.7057 C31.8627,22.8282 25.34895,29.4117 17.3142,29.4117 C9.27945,29.4117 2.7657,22.8282 2.7657,14.7057 C2.7657,6.58395 9.27945,0.00045 17.3142,0.00045 C25.34895,0.00045 31.8627,6.58395 31.8627,14.7057" id="Fill-6" fill="#445C6C"></path>
+                        <path d="M22.1295,9.6981 C18.33225,14.0796 8.66325,15.0411 5.32725,15.2451 L5.32725,19.79685 C5.32725,26.4171 10.6935,31.78335 17.31375,31.78335 C23.934,31.78335 29.30175,26.4171 29.30175,19.79685 L29.30175,14.89935 C24.0675,13.27035 22.1295,9.6981 22.1295,9.6981" id="Fill-8" fill="#FBD984"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

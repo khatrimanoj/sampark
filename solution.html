@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sampark Hamesha - solution</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#e85b72" /> 
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="ICON" href="images/fevicon/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut ICON" href="/images/fevicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/fevicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/fevicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/fevicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/fevicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/fevicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/fevicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/fevicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/fevicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/fevicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/fevicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/fevicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/fevicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/fevicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#e85b72" /> 
+  <link rel="stylesheet" href="css/jquery.range.css">
+  <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800,900" rel="stylesheet">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+  <script src="js/jquery.range.js"></script>
+  
+
+  <script>
+    function openNav() {
+    document.getElementById("mySidenav").style.right = "0%";
+     document.getElementById("faded-bg").style.display = "block";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.right = "-50%";
+        document.getElementById("faded-bg").style.display = "none";
+    }
+    
+    	        
+      $(document).ready(function () {
+        $(".profile-drop").click(function(){
+          $("#myDropdown").toggle();
+       });
+          $("table#main tbody tr#incdental").click(function() {
+            $('.arrow-down').toggleClass('active');
+           $("table#child").toggle('slow');
+        });
+        $("table#main tbody tr#Incidental1").click(function() {
+            $('.arrow-down').toggleClass('active');
+           $("table#child1").toggle('slow');
+        });
+   
+    $(document).on("scroll", onScroll);
+    
+    //smoothscroll
+    $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+      || location.hostname == this.hostname) {
+
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top - 100
+        }, 1000);
+        return false;
+      }
+    }
+  });
+ });
+
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('#mainnav a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#mainnav ul li a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+}
+ 
+
+  </script>
+  
+</head>
+
+<body>
+  <!--one page scrolling nav start here-->
+  <div class="one-page-scroll">
+  	  <nav id="mainnav" class="">
+        <ul class="dotnav dotnav-vertical dotnav-right nav">
+            <li class="awesome-tooltip" title="Home"><a href="#home"></a></li>
+            <li class="awesome-tooltip" title="About"><a href="#about"></a></li>
+            <li class="awesome-tooltip" title="Skills"><a href="#skills"></a></li>
+        </ul>
+    </nav> 
+  </div>
+  <!--one page scrolling nav end here-->
+  <div class="wrapper">
+    <header>
+      <div class="custom-container">
+        <span id="faded-bg" style="display: none;" onclick="closeNav()"></span>
+        <div class="menu">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Sampark Hamesha Logo"></a>
+          </div>
+          
+          
+          <button id="toggle-menu" class="toggle-btn" onclick="openNav()">
+              <img src="images/menu.png" class="menu-open">
+          </button>
+           <div class="profile-more">
+            <a class="avtar profile-drop"><img src="images/profile-img.png" alt="Profile Image"></a>
+            <a href="#" class="more" style="display: none;"><img src="images/plus.svg" alt="plus icon"></a>
+          </div>     
+           <div id="myDropdown" class="dropdown-content">
+              <a href="my-profile.html">My profile</a>
+              <a href="#">Logout</a>
+            </div>
+
+             <ul id="mySidenav"  class="menu-bar">
+                         <span id="#faded-bg" onclick="closeNav()"></span>
+                <!--  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                <!-- <img src="images/menu-cross.png" class="menu-close"> -->
+                
+                <li class="welcome-li">
+                  <div class="welcome-login">
+                  <a href="#"><span>Welcome, Sonika</span></a>
+                </div>
+                </li>
+                
+                 <li><img class="category-icon" src="images/category-icon/prescription.svg"><a href="prescription.html">Prescriptions</a></li>
+                <li><img class="category-icon" src="images/body-scan.svg"><a href="body-scans.html">Body Scans</a></li>
+                <li><img class="category-icon" src="images/category-icon/leb-report.svg"><a href="lab-reports.html">Lab Reports</a></li>
+                <li><img class="category-icon" src="images/category-icon/activity-traker.svg"><a href="activity-tracker.html">Activity Tracker</a></li>
+                <li><img class="category-icon" src="images/category-icon/Diseases-Care.svg"><a href="health-care.html">Health Care</a></li>
+                <li><img class="category-icon" src="images/category-icon/reminders.svg"><a href="pill-reminder.html">Reminders</a></li>
+                 <li class="log-out-li"><img class="category-icon" src="images/category-icon/logout.svg"><a href="#">Log out</a></li>
+                <li class="profile profile-drop"><a><img src="images/profile-img.png" alt="Profile Image"></a></li>
+                <li class="plus" style="display: none;"><a href="#"><img src="images/plus.svg" alt="plus icon"></a></li>
+             </ul>
+     
+          
+        </div>
+        
+      </div>
+    </header>
+    <div class="custom-container">
+      <div class="main-wrapper solution">
+        <div class="upload-heading">
+               <div class="sub-heading">
+              <h2>Thats not a good news, Paresh</h2>
+            </div>
+            <div class="main-heading">
+              <h1>You have <span class="light-red">High Risk</span> of having <span class="light-red">Diabetes</span></h1>
+            </div>
+
+        </div>
+         <div class="main-content" id="home">
+            <section class="solution">
+                 <div class="medical-cost">
+            	 	 <span class="price">₹18,652,069 </span>
+                     <span class="label">Lifetime medical cost</span>
+            	 </div>
+            	 <div class="range">
+            	 	 <ul>
+		                 <li id="age-living" class="per">
+		                     <div class="title big">Inflation over the years</div>
+		                     <input type="hidden" class="age-living" value="20" />
+		                 </li>
+                     </ul>
+            	 </div>
+            	 <div class="mediacl-cost-table">
+            	 	<table id="main">
+            	 		 <thead>
+            	 			 <tr>
+            	 				 <th>Cost Type</th>
+                                 <th>Current Cost</th>
+                                 <th>In 20 years</th>
+                                 <th>In 30 years</th>
+                                 <th>In 40 years</th>
+            	 			 </tr>
+            	 		 </thead>
+            	 		 <tbody>
+            	 		 	 <tr>
+            	 		 	 	 <td>
+            	 		 	 	 		<span class="cost-img"><img src="images/medical-tablet.svg"> <label>Medical</label></span>
+            	 		 	 	 <td>₹ 60,000</td>
+            	 		 	 	 <td>₹ 250,635 </td>
+            	 		 	 	 <td>₹ 650,082</td>
+            	 		 	 	 <td>₹ 1,686,146</td>
+            	 		 	 </tr>
+            	 		 	 <tr>
+            	 		 	 	 <td>
+            	 		 	 	 		<span class="cost-img"><img src="images/consaltation.svg"> <label>Consultation</label></span>
+            	 		 	 	 <td>₹ 60,000</td>
+            	 		 	 	 <td>₹ 250,635 </td>
+            	 		 	 	 <td>₹ 650,082</td>
+            	 		 	 	 <td>₹ 1,686,146</td>
+            	 		 	 </tr>
+            	 		 	 <tr>
+            	 		 	 	 <td>
+            	 		 	 	 		<span class="cost-img"><img src="images/leb-test.svg"> <label>Lab Test</label></span>
+            	 		 	 	 <td>₹ 60,000</td>
+            	 		 	 	 <td>₹ 250,635 </td>
+            	 		 	 	 <td>₹ 650,082</td>
+            	 		 	 	 <td>₹ 1,686,146</td>
+            	 		 	 </tr>
+            	 		 	 <tr id="incdental">
+            	 		 	 	 <td>
+            	 		 	 	 		<span class="cost-img"><img src="images/incdental.svg"> <label>Incidental </label><i class="arrow-down" ></i></span>
+            	 		 	 	 <td>₹ 60,000</td>
+            	 		 	 	 <td>₹ 250,635 </td>
+            	 		 	 	 <td>₹ 650,082</td>
+            	 		 	 	 <td>₹ 1,686,146</td>
+            	 		 	 </tr>
+                     
+            	 		 </tbody>
+            	 	</table>
+                 <table id="child" style="display: none;">
+                         <tr>
+                             <td>
+                                <span class="cost-img"><img src="images/eye-table.svg"> <label>Eyes</label></span>
+                             <td>₹ 60,000</td>
+                             <td>₹ 250,635 </td>
+                             <td>₹ 650,082</td>
+                             <td>₹ 1,686,146</td>
+                         </tr>
+                         <tr>
+                             <td>
+                                <span class="cost-img"><img src="images/heart-table.svg"> <label>Heart</label></span>
+                             <td>₹ 60,000</td>
+                             <td>₹ 250,635 </td>
+                             <td>₹ 650,082</td>
+                             <td>₹ 1,686,146</td>
+                         </tr>
+                         <tr>
+                             <td>
+                                <span class="cost-img"><img src="images/Group 5.svg"> <label>Kidney</label></span>
+                             <td>₹ 60,000</td>
+                             <td>₹ 250,635 </td>
+                             <td>₹ 650,082</td>
+                             <td>₹ 1,686,146</td>
+                         </tr>
+
+                 </table>
+            	 </div>
+            </section>
+         </div>
+
+         <div class="main-content" id="about">
+            <section class="solution">
+                 <div class="medical-cost" >
+            	 	 <span class="price">₹18,652,069 </span>
+                     <span class="label">What you Require in next 15 Years.</span>
+            	 </div>
+            	 <div class="card-section">
+            	 	 <div class="card-content">
+            	 	 	 <div class="card-box no-margin-left">
+            	 	 		<div class="range2">
+			            	 	 <ul>
+					                 <li id="medicine-cost" class="per">
+					                     <div class="title big">Rate of Return / Annum</div>
+					                     <input type="hidden" class="age-living" value="20" />
+					                 </li>
+			                     </ul>
+			            	 </div>
+            	 	 	 </div>
+            	 	 	 <div class="card-box no-margin-right">
+            	 	 		 <div class="range2">
+			            	 	 <ul>
+					                 <li id="consulting-cost" class="per">
+					                     <div class="title big">Inflation over the years</div>
+					                     <input type="hidden" class="age-living" value="20" />
+					                 </li>
+			                     </ul>
+			            	 </div>
+            	 	 	 </div>
+            	 	 	 <div class="card-box no-margin-left">
+            	 	 		<div class="box">
+            	 	 			 <div class="img-box">
+            	 	 			 	<img src="images/Medicine_icon.svg">
+            	 	 			 </div>
+            	 	 			 <div class="text"> 
+            	 	 			 	<label>Medicines</label>
+            	 	 			 	<span>₹ 52,044,848 </span>
+            	 	 			 </div>
+            	 	 		</div>
+            	 	 	 </div>
+            	 	 	 <div class="card-box no-margin-right">
+            	 	 		<div class="box">
+            	 	 			 <div class="img-box">
+            	 	 			 	<img src="images/lab-test.svg">
+            	 	 			 </div>
+            	 	 			 <div class="text"> 
+            	 	 			 	<label>Lab Test</label>
+            	 	 			 	<span>₹ 52,044,848 </span>
+            	 	 			 </div>
+            	 	 		</div>
+            	 	 	 </div>
+            	 	 	 <div class="card-box no-margin-left">
+            	 	 		 <div class="box">
+            	 	 			 <div class="img-box">
+            	 	 			 	<img src="images/Consulting.svg">
+            	 	 			 </div>
+            	 	 			 <div class="text"> 
+            	 	 			 	<label>Consulting</label>
+            	 	 			 	<span>₹ 52,044,848 </span>
+            	 	 			 </div>
+            	 	 		</div>
+            	 	 	 </div>
+            	 	 	 <div class="card-box no-margin-right">
+            	 	 		 <div class="box">
+            	 	 			 <div class="img-box">
+            	 	 			 	<img src="images/Incidental.svg">
+            	 	 			 </div>
+            	 	 			 <div class="text"> 
+            	 	 			 	<label>Incidental</label>
+            	 	 			 	<span>₹ 52,044,848 </span>
+            	 	 			 </div>
+            	 	 		</div>
+            	 	 	 </div>
+            	 	 </div>
+            	 </div>
+            	 
+            </section>
+         </div>
+
+
+         <div class="main-content" id="skills">
+            <section class="solution">
+                 <div class="medical-cost">
+            	 	 <span class="price">₹18,652,069 </span>
+                     <span class="label">Lifetime medical cost</span>
+            	 </div>
+            	 <div class="range">
+            	 	 <ul>
+		                 <li id="age-living" class="per">
+		                     <div class="title big">Inflation over the years</div>
+		                     <input type="hidden" class="age-living" value="20" />
+		                 </li>
+                     </ul>
+            	 </div>
+            	 <div class="mediacl-cost-table">
+            	 	<table id="main">
+            	 		 <thead>
+            	 			 <tr>
+            	 				 <th>Cost Type</th>
+                                 <th>Current Cost</th>
+                                 <th>In 20 years</th>
+                                 <th>In 30 years</th>
+                                 <th>In 40 years</th>
+            	 			 </tr>
+            	 		 </thead>
+            	 		 <tbody>
+            	 		 	 <tr>
+            	 		 	 	 <td>
+            	 		 	 	 		<span class="cost-img"><img src="images/medical-tablet.svg"> <label>Medical</label></span>
+            	 		 	 	 <td>₹ 60,000</td>
+            	 		 	 	 <td>₹ 250,635 </td>
+            	 		 	 	 <td>₹ 650,082</td>
+            	 		 	 	 <td>₹ 1,686,146</td>
+            	 		 	 </tr>
+            	 		 	 <tr>
+            	 		 	 	 <td>
+            	 		 	 	 		<span class="cost-img"><img src="images/consaltation.svg"> <label>Consultation</label></span>
+            	 		 	 	 <td>₹ 60,000</td>
+            	 		 	 	 <td>₹ 250,635 </td>
+            	 		 	 	 <td>₹ 650,082</td>
+            	 		 	 	 <td>₹ 1,686,146</td>
+            	 		 	 </tr>
+            	 		 	 <tr>
+            	 		 	 	 <td>
+            	 		 	 	 		<span class="cost-img"><img src="images/leb-test.svg"> <label>Lab Test</label></span>
+            	 		 	 	 <td>₹ 60,000</td>
+            	 		 	 	 <td>₹ 250,635 </td>
+            	 		 	 	 <td>₹ 650,082</td>
+            	 		 	 	 <td>₹ 1,686,146</td>
+            	 		 	 </tr>
+            	 		 	 <tr id="Incidental1">
+            	 		 	 	 <td>
+            	 		 	 	 		<span class="cost-img"><img src="images/incdental.svg"> <label>Incidental</label><i class="arrow-down" ></i></span>
+            	 		 	 	 <td>₹ 60,000</td>
+            	 		 	 	 <td>₹ 250,635 </td>
+            	 		 	 	 <td>₹ 650,082</td>
+            	 		 	 	 <td>₹ 1,686,146</td>
+            	 		 	 </tr>
+                     
+            	 		 </tbody>
+            	 	</table>
+                 <table id="child1" style="display: none;">
+                         <tr>
+                             <td>
+                                <span class="cost-img"><img src="images/eye-table.svg"> <label>Eyes</label></span>
+                             <td>₹ 60,000</td>
+                             <td>₹ 250,635 </td>
+                             <td>₹ 650,082</td>
+                             <td>₹ 1,686,146</td>
+                         </tr>
+                         <tr>
+                             <td>
+                                <span class="cost-img"><img src="images/heart-table.svg"> <label>Heart</label></span>
+                             <td>₹ 60,000</td>
+                             <td>₹ 250,635 </td>
+                             <td>₹ 650,082</td>
+                             <td>₹ 1,686,146</td>
+                         </tr>
+                         <tr>
+                             <td>
+                                <span class="cost-img"><img src="images/Group 5.svg"> <label>Kidney</label></span>
+                             <td>₹ 60,000</td>
+                             <td>₹ 250,635 </td>
+                             <td>₹ 650,082</td>
+                             <td>₹ 1,686,146</td>
+                         </tr>
+
+                 </table>
+            	 </div>
+            </section>
+         </div>
+         <div class="solution-netx-btn">
+             <span>Let me view all your plans for investing</span>
+             <div class="update-now-btn">
+                <button>
+                   Explore Our Plans
+                </button>
+             </div>
+         </div>
+               
+    </div>
+  </div>
+  <script>
+    $('.age-living').jRange({
+      from: 0,
+      to: 80,
+      step: 5,
+      scale: [35, 40, 45, 50, 55, 60, 65, 70, 75, 80],
+      width: 370,
+      showLabels: true,
+      range: false
+    });
+    $('.medicine-cost').jRange({
+      from: 0,
+      to: 5000,
+      step: 2,
+      scale: [0, 2, 3, 4, 5, 8, 10, 12, 15, 20],
+      width: 370,
+      showLabels: true,
+      range: false
+    });
+    $('.consulting-cost').jRange({
+      from: 0,
+      to: 5000,
+      step: 2,
+      scale: [0, 2, 3, 4, 5, 8, 10, 12, 15, 20],
+      width: 370,
+      showLabels: true,
+      range: false
+    });
+    $('.over-time').jRange({
+      from: 0,
+      to: 15,
+      step: 3,
+      scale: [0, 3, 5, 8, 10, 12, 15],
+      width: 370,
+      showLabels: true,
+      range: false
+    });
+    $('.lumsum-amt').jRange({
+      from: 0,
+      to: 2400000,
+      step: 3,
+      scale: [0, 2, 3, 4, 5, 8, 10, 12, 15, 20],
+      width: 370,
+      showLabels: true,
+      range: false
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sampark Hamesha - Personal Information</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#e85b72" /> 
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="ICON" href="images/fevicon/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut ICON" href="/images/fevicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/fevicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/fevicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/fevicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/fevicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/fevicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/fevicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/fevicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/fevicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/fevicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/fevicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/fevicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/fevicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/fevicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <link rel="stylesheet" href="css/jquery.range.css">
+  <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800,900" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/jquery.range.js"></script>
+
+  <script>
+           function openNav() {
+    document.getElementById("mySidenav").style.right = "0%";
+     document.getElementById("faded-bg").style.display = "block";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.right = "-50%";
+        document.getElementById("faded-bg").style.display = "none";
+    }
+    $(document).ready(function() {
+      $('.nav-tabs > li > a').click(function(event) {
+        event.preventDefault(); //stop browser to take action for clicked anchor
+
+        //get displaying tab content jQuery selector
+        var active_tab_selector = $('.nav-tabs > li.active > a').attr('href');
+
+        //find actived navigation and remove 'active' css
+        var actived_nav = $('.nav-tabs > li.active');
+        actived_nav.removeClass('active');
+
+        //add 'active' css into clicked navigation
+        $(this).parents('li').addClass('active');
+
+        //hide displaying tab content
+        $(active_tab_selector).removeClass('active');
+        $(active_tab_selector).addClass('hide');
+
+
+        //show target tab content
+        var target_tab_selector = $(this).attr('href');
+        $(target_tab_selector).removeClass('hide');
+        $(target_tab_selector).addClass('active');
+      });
+       // $('.nav-tabs>li>a').click(function(){
+       //   $('.tab-content').toggle('fade');
+       // });
+
+      /*$('.medical-cost').click(function() {
+        $('#medical').toggleClass('active');
+        $('.medical-dropdown').toggle('slideIn');
+        $('.medical-cost').toggleClass('active');
+      });*/
+    });
+  </script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+<div class="custom-container">
+        <span id="faded-bg" style="display: none;" onclick="closeNav()"></span>
+        <div class="menu">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Sampark Hamesha Logo"></a>
+          </div>
+         
+          
+          <button id="toggle-menu" class="toggle-btn" onclick="openNav()">
+              <img src="images/menu.png" class="menu-open">
+          </button>
+           <div class="profile-more">
+            <a href="my-profile.html" class="avtar"><img src="images/profile-img.png" alt="Profile Image"></a>
+            <a href="#" class="more" style="display: none;"><img src="images/plus.svg" alt="plus icon"></a>
+          </div>
+           <ul id="mySidenav"  class="menu-bar">
+                         <span id="#faded-bg" onclick="closeNav()"></span>
+                <!--  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                <!-- <img src="images/menu-cross.png" class="menu-close"> -->
+                
+                <li class="welcome-li">
+                  <div class="welcome-login">
+                  <a href="#"><span>Welcome, Sonika</span></a>
+                </div>
+                </li>
+                
+                 <li><img class="category-icon" src="images/category-icon/prescription.svg"><a href="prescription.html">Prescriptions</a></li>
+                <li><img class="category-icon" src="images/body-scan.svg"><a href="body-scans.html">Body Scans</a></li>
+                <li><img class="category-icon" src="images/category-icon/leb-report.svg"><a href="lab-reports.html">Lab Reports</a></li>
+                <li><img class="category-icon" src="images/category-icon/activity-traker.svg"><a href="activity-tracker.html">Activity Tracker</a></li>
+                <li><img class="category-icon" src="images/category-icon/Diseases-Care.svg"><a href="health-care.html">Health Care</a></li>
+                <li><img class="category-icon" src="images/category-icon/reminders.svg"><a href="pill-reminder.html">Reminders</a></li>
+                 <li class="log-out-li"><img class="category-icon" src="images/category-icon/logout.svg"><a href="#">Log out</a></li>
+                <li class="profile"><a href="my-profile.html"><img src="images/profile-img.png" alt="Profile Image"></a></li>
+                <li class="plus" style="display: none;"><a href="#"><img src="images/plus.svg" alt="plus icon"></a></li>
+             </ul>
+     
+          
+        </div>
+        
+      </div>
+    </header>
+
+    <div class="custom-container">
+      <div class="main-wrapper">
+        <div class="result-left">
+          <div class="sub-heading">
+            <h2>Thats not a good news, Paresh</h2>
+          </div>
+          <div class="main-heading">
+            <h1>You have <span class="light-red">High Risk</span> of <br> having <span class="light-red">Fracture</span></h1>
+          </div>
+          <div class="result">
+            <div class="medical-cost cost">
+              <span class="price">₹18,652,069 </span>
+              <span class="label">Lifetime medical cost</span>
+            </div>
+           
+            
+            <div class="medical-dropdown">
+              
+              <div class="overflow-content">
+                <section id="cost-calculator" class="tab-content active">
+                  <ul>
+                    <li id="age-living">
+                      <div class="title big">So if you dont plan your health for</div>
+                      <input type="hidden" class="age-living" value="20" />
+                    </li>
+                    
+                    <li id="over-time">
+                      <div class="title">On inflation of</div>
+                      <input type="hidden" class="over-time" value="8" />
+                    </li>
+                    <li class="table">
+                      <div class="title">What is the cost if you dont plan your health ?</div>
+                      <table class="risk-table">
+                         <tr>
+                 <th></th>
+                 <th><label>Current Cost</label></th>
+                 <th><label>Cost after <span>20 Years</span></label></th>
+               </tr>
+               <tr>
+                    <td class="text-left"><label>Medicines</label></td>
+                    <td><input type="text" name="" value=" ₹ 190,300"></td>
+                    <td><input type="text" name="" value=" ₹ 190,300"></td>
+                 </tr>
+                 <tr>
+                    <td class="text-left"><label>Consulting</label></td>
+                    <td><input type="text" name="" value=" ₹ 190,300"></td>
+                    <td><input type="text" name="" value=" ₹ 190,300"></td>
+                 </tr>
+                 <tr>
+                    <td class="text-left"><label>Labtest</label></td>
+                    <td><input type="text" name="" value=" ₹ 190,300"></td>
+                    <td><input type="text" name="" value=" ₹ 190,300"></td>
+                 </tr>
+                 <tr>
+                    <td class="text-left"><label>Incidental</label></td>
+                    <td><input type="text" name="" value=" ₹ 190,300"></td>
+                    <td><input type="text" name="" value=" ₹ 190,300"></td>
+                 </tr>
+                      </table>
+                    </li>
+                    <a class="download-files" href=""><img src="images/download-file.svg"> Download All Details.</a>
+                  </ul>
+                </section>
+               
+              </div>
+            </div>
+          </div>
+          <div class="secure-now">
+            <button type="submit" class="default-btn secure">Secure My Health Now</button>
+          </div>
+        </div>
+        <div class="result-right">
+          <div class="img-box">
+            <img src="images/result-img.png" alt="result image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    $('.age-living').jRange({
+      from: 0,
+      to: 80,
+      step: 5,
+      scale: [35, 40, 45, 50, 55, 60, 65, 70, 75, 80],
+      width: 370,
+      showLabels: true,
+      range: false
+    });
+    $('.medicine-cost').jRange({
+      from: 0,
+      to: 5000,
+      step: 2,
+      scale: [0, 2, 3, 4, 5, 8, 10, 12, 15, 20],
+      width: 370,
+      showLabels: true,
+      range: false
+    });
+    $('.consulting-cost').jRange({
+      from: 0,
+      to: 5000,
+      step: 2,
+      scale: [0, 2, 3, 4, 5, 8, 10, 12, 15, 20],
+      width: 370,
+      showLabels: true,
+      range: false
+    });
+    $('.over-time').jRange({
+      from: 0,
+      to: 15,
+      step: 3,
+      scale: [0, 3, 5, 8, 10, 12, 15],
+      width: 370,
+      showLabels: true,
+      range: false
+    });
+    $('.lumsum-amt').jRange({
+      from: 0,
+      to: 2400000,
+      step: 3,
+      scale: [0, 2, 3, 4, 5, 8, 10, 12, 15, 20],
+      width: 370,
+      showLabels: true,
+      range: false
+    });
+  </script>
+</body>
+
+</html>

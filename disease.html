@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sampark Hamesha - Personal Information</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#e85b72" /> 
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="ICON" href="images/fevicon/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut ICON" href="/images/fevicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/fevicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/fevicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/fevicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/fevicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/fevicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/fevicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/fevicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/fevicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/fevicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/fevicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/fevicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/fevicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/fevicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800,900" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+        function openNav() {
+    document.getElementById("mySidenav").style.right = "0%";
+     document.getElementById("faded-bg").style.display = "block";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.right = "-50%";
+        document.getElementById("faded-bg").style.display = "none";
+    }
+     $( document ).ready(function() {
+       $(".profile-drop").click(function(){
+          $("#myDropdown").toggle();
+      });
+    $('.drop-down button').on('click',function(){
+        $('.drop-down .drop-down-ul').toggle();
+    });
+    });
+     $( document ).ready(function() {
+      $(".close").click(function () {
+    $(".toggle-model").css("display", "none");
+     });
+   
+    });
+    $( document ).ready(function() {
+        $('#model-upload').on('click',function(){
+            $('.toggle-model').toggle();
+        });
+        $(document).keyup(function(e) {
+          if (e.which == 27) {
+               $(".toggle-model").css("display", "none"); 
+          }
+          });
+ 
+    });
+  </script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+     <div class="custom-container">
+        <span id="faded-bg" style="display: none;" onclick="closeNav()"></span>
+        <div class="menu">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Sampark Hamesha Logo"></a>
+          </div>
+          
+          
+          <button id="toggle-menu" class="toggle-btn" onclick="openNav()">
+              <img src="images/menu.png" class="menu-open">
+          </button>
+          <div class="profile-more">
+            <a  class="avtar profile-drop"><img src="images/profile-img.png" alt="Profile Image"></a>
+            <a href="#" class="more" style="display: none;"><img src="images/plus.svg" alt="plus icon"></a>
+          </div>
+           <div id="myDropdown" class="dropdown-content">
+              <a href="my-profile.html">My profile</a>
+              <a href="#">Logout</a>
+           </div>
+           <ul id="mySidenav"  class="menu-bar">
+                         <span id="#faded-bg" onclick="closeNav()"></span>
+                <!--  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                <!-- <img src="images/menu-cross.png" class="menu-close"> -->
+                
+                <li class="welcome-li">
+                  <div class="welcome-login">
+                  <a href="#"><span>Welcome, Sonika</span></a>
+                </div>
+                </li>
+                
+                 <li><img class="category-icon" src="images/category-icon/prescription.svg"><a href="prescription.html">Prescriptions</a></li>
+                <li><img class="category-icon" src="images/body-scan.svg"><a href="body-scans.html">Body Scans</a></li>
+                <li><img class="category-icon" src="images/category-icon/leb-report.svg"><a href="lab-reports.html">Lab Reports</a></li>
+                <li><img class="category-icon" src="images/category-icon/activity-traker.svg"><a href="activity-tracker.html">Activity Tracker</a></li>
+                <li><img class="category-icon" src="images/category-icon/Diseases-Care.svg"><a href="health-care.html">Health Care</a></li>
+                <li><img class="category-icon" src="images/category-icon/reminders.svg"><a href="pill-reminder.html">Reminders</a></li>
+                 <li class="log-out-li"><img class="category-icon" src="images/category-icon/logout.svg"><a href="#">Log out</a></li>
+                <li class="profile profile-drop"><a><img src="images/profile-img.png" alt="Profile Image"></a></li>
+                <li class="plus" style="display: none;"><a href="#"><img src="images/plus.svg" alt="plus icon"></a></li>
+             </ul>
+     
+          
+        </div>
+        
+      </div>
+    </header>
+     <!--if profile is empty popup start here-->
+         <div class="toggle-model">
+            <div class="overlay">
+            </div>
+            <div class="uploding-form activity empty">
+              <div class="close">×</div>
+                   <h1>Add Basic Information</h1>
+              <div class="form-horizontal ">
+                 <div class="profile-image">
+                     <img src="images/avtar.svg">
+                     <h5>Before Predicting the disease, kindly complete, first the </h5>
+                     <h6>Basic Information.</h6>
+                 </div>
+                    
+                  
+                 <div class="button"> 
+                    <button class="btn-back back2 default-btn">Cancel</button>
+                    <button class="btn-next default-btn">Proceed</button>
+                 </div>
+              </div>
+            </div>
+         </div>
+         <!--if profile is empty popup end here-->
+
+    <div class="custom-container">
+      <div class="main-wrapper">
+        <div class="sub-heading">
+          <h2>How are you doing?</h2>
+        </div>
+        <div class="main-heading">
+          <h1>
+Prakhar Neel Sharma</h1>
+        </div>
+        <div class="gride-content disease">
+          <div class="box no-margin-left">
+            <div class="box-1">
+              <div class="img-box center">
+                <img src="images/diabetes.svg" alt="Avtar Profile">
+              </div>
+              <div class="box-content">
+                <div class="sub-heading">
+                  <h2>Diabetes</h2>
+                </div>
+                <div class="button">
+                  <button type="submit" class="predict" id="model-upload" >Predict Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-1">
+               <div class="ribbin">
+                   <span>High Risk</span> 
+               </div>
+              <div class="img-box center">
+                <img src="images/fracture.svg" alt="Avtar Profile">
+              </div>
+              <div class="box-content">
+                <div class="sub-heading">
+                  <h2>Bone Fracture</h2>
+                </div>
+                <div class="button">
+                  <button type="submit" class="predict" onclick="window.location.href='fracture-question.html'">Secure Your Self Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box no-margin-right">
+            <div class="box-1">
+              <div class="img-box center">
+                <img src="images/cardio.svg" alt="Avtar Profile">
+              </div>
+              <div class="box-content">
+                <div class="sub-heading">
+                  <h2>Cardio</h2>
+                </div>
+                <div class="button">
+                  <button type="submit" class="predict" onclick="window.location.href='cardio-question.html'">Predict Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
